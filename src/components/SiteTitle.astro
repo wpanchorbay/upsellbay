@@ -1,11 +1,11 @@
 ---
 const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
-import { BASE_PATH } from "../../site-config.mjs";
+import { ASSET_LINKS } from '../lib/links';
 ---
 
 <a href={siteTitleHref} class="site-title sl-flex">
 	<img
-		src={`${BASE_PATH}/assets/wpanchorbay-icon.svg`}
+		src={ASSET_LINKS.icon}
 		alt="License Server"
 		class="license-navbar-logo"
 		width="42"

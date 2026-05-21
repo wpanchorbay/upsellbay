@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { buildAbsoluteUrl } from "../../site-config.mjs";
+import { FEED_LINKS } from "../lib/links";
 
 export const prerender = true;
 
@@ -9,11 +9,11 @@ export const GET: APIRoute = () => {
     "Allow: /",
     "",
     "# Sitemap",
-    `Sitemap: ${buildAbsoluteUrl("/sitemap-index.xml")}`,
+    `Sitemap: ${FEED_LINKS.sitemap}`,
     "",
     "# LLM-friendly content",
     "# These files provide documentation in a format optimized for AI and LLMs",
-    `# Discovered at: ${buildAbsoluteUrl("/llms.txt")}`,
+    `# Discovered at: ${FEED_LINKS.llms}`,
   ].join("\n");
 
   return new Response(`${body}\n`, {

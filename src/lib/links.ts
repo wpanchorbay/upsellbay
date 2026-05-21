@@ -1,0 +1,94 @@
+/**
+ * Centralized links registry.
+ *
+ * All hyperlinks and resource URLs used across this project should reference
+ * the constants exported from this file rather than being hardcoded inline.
+ *
+ * Groups:
+ *   EXTERNAL_LINKS – third-party / outbound URLs
+ *   PAGE_LINKS     – internal page paths (site-relative, includes BASE_PATH)
+ *   ASSET_LINKS    – static asset paths   (site-relative, includes BASE_PATH)
+ *   FEED_LINKS     – full absolute URLs for machine-readable resources
+ *
+ * NOTE: YAML frontmatter in .md/.mdx files cannot reference JS expressions,
+ * so any link that lives purely in frontmatter remains a plain string there.
+ * Those values are annotated with a comment referencing the matching constant
+ * so they stay easy to find and update in lock-step.
+ */
+
+import {
+  BASE_PATH,
+  ICON_HREF,
+  REPO_URL,
+  WPANCHORBAY_URL,
+  buildAbsoluteUrl,
+} from '../../site-config.mjs';
+
+// ---------------------------------------------------------------------------
+// External (third-party) URLs
+// ---------------------------------------------------------------------------
+
+export const EXTERNAL_LINKS = {
+  /** WPAnchorBay main website */
+  wpAnchorBay: WPANCHORBAY_URL,
+
+  /** GitHub repository for this documentation project */
+  githubRepo: REPO_URL,
+
+  /** Astro framework website */
+  astro: 'https://astro.build/',
+
+  /** Starlight official getting-started guide */
+  starlightGettingStarted: 'https://starlight.astro.build/getting-started/',
+} as const;
+
+// ---------------------------------------------------------------------------
+// Internal page paths  (site-relative; include the base path)
+// ---------------------------------------------------------------------------
+
+export const PAGE_LINKS = {
+  /** Documentation home */
+  home: `${BASE_PATH}/`,
+
+  /** Getting Started – Installation */
+  installation: `${BASE_PATH}/getting-started/installation/`,
+
+  /** Getting Started – Configuration */
+  configuration: `${BASE_PATH}/getting-started/configuration/`,
+
+  /** Guides – Example */
+  exampleGuide: `${BASE_PATH}/guides/example/`,
+
+  /** Resources – Official Docs */
+  officialDocs: `${BASE_PATH}/resources/official-docs/`,
+} as const;
+
+// ---------------------------------------------------------------------------
+// Static asset paths (site-relative; include the base path)
+// ---------------------------------------------------------------------------
+
+export const ASSET_LINKS = {
+  /** Site favicon and navbar logo icon (SVG) */
+  icon: ICON_HREF,
+} as const;
+
+// ---------------------------------------------------------------------------
+// Machine-readable / feed resources (full absolute URLs)
+// ---------------------------------------------------------------------------
+
+export const FEED_LINKS = {
+  /** Canonical root URL */
+  canonical: buildAbsoluteUrl('/'),
+
+  /** XML sitemap index */
+  sitemap: buildAbsoluteUrl('/sitemap-index.xml'),
+
+  /** LLM-friendly documentation index */
+  llms: buildAbsoluteUrl('/llms.txt'),
+
+  /** LLM-friendly full documentation */
+  llmsFull: buildAbsoluteUrl('/llms-full.txt'),
+
+  /** MCP server documentation page */
+  mcpDocs: buildAbsoluteUrl('/agents/mcp-server/'),
+} as const;

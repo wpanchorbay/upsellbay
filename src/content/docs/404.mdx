@@ -11,19 +11,24 @@ hero:
   title: Lost the route?
   tagline: "404: The page you requested is not found."
   image:
+    # ASSET_LINKS.icon — cannot use JS expressions in YAML frontmatter
     html: '<div class="license-404-mark-wrap" aria-hidden="true"><div class="license-404-mark-glow"></div><div class="license-404-mark-shell"><img src="/documentation-boilerplate-starlight/assets/wpanchorbay-icon.svg" alt="" class="license-404-mark" /></div></div>'
   actions:
     - text: Back to Docs Home
       icon: right-arrow
+      # PAGE_LINKS.home — cannot use JS expressions in YAML frontmatter
       link: /documentation-boilerplate-starlight/
     - text: Installation
       icon: rocket
       variant: minimal
+      # PAGE_LINKS.installation — cannot use JS expressions in YAML frontmatter
       link: /documentation-boilerplate-starlight/getting-started/installation/
 ---
 
+import { PAGE_LINKS } from '../../lib/links';
+
 <div class="license-404-links">
-	<a href="/documentation-boilerplate-starlight/getting-started/installation/">Installation</a>
-	<a href="/documentation-boilerplate-starlight/getting-started/configuration/">Configuration</a>
-	<a href="/documentation-boilerplate-starlight/guides/example/">Example Guide</a>
+	<a href={PAGE_LINKS.installation}>Installation</a>
+	<a href={PAGE_LINKS.configuration}>Configuration</a>
+	<a href={PAGE_LINKS.exampleGuide}>Example Guide</a>
 </div>

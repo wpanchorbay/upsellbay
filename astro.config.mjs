@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
 import {
   BASE_PATH,
+  ICON_HREF,
   REPO_URL,
   SITE_ORIGIN,
   LOGO_SVG_PATH,
@@ -55,7 +56,7 @@ export default defineConfig({
           attrs: {
             rel: "icon",
             type: "image/svg+xml",
-            href: `${BASE_PATH}/assets/wpanchorbay-icon.svg`,
+            href: ICON_HREF,
           },
         },
       ],

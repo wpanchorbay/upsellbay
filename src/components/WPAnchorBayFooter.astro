@@ -2,11 +2,12 @@
 import { Image } from 'astro:assets';
 import ThemeToggle from './ThemeToggle.astro';
 import wpAnchorBayLogo from '../assets/wpanchorbay-logo.svg';
+import { EXTERNAL_LINKS } from '../lib/links';
 ---
 
 <footer class="license-footer">
 	<p class="license-footer-kicker">Brought to you by</p>
-	<a href="https://wpanchorbay.com/" class="license-footer-logo">
+	<a href={EXTERNAL_LINKS.wpAnchorBay} class="license-footer-logo">
 		<Image
 			src={wpAnchorBayLogo}
 			alt="WPAnchorBay"
@@ -20,7 +21,7 @@ import wpAnchorBayLogo from '../assets/wpanchorbay-logo.svg';
 		Revolutionizing and Forging the Future of WordPress with Cutting-Edge,
 		State-of-the-Art Plugins Designed Exclusively for WooCommerce.
 	</p>
-	<a href="https://wpanchorbay.com/">Learn more about WPAnchorBay</a>
+	<a href={EXTERNAL_LINKS.wpAnchorBay}>Learn more about WPAnchorBay</a>
 
 	<ThemeToggle />
 </footer>
