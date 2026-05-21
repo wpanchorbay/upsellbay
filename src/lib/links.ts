@@ -19,10 +19,12 @@
 import {
   BASE_PATH,
   ICON_HREF,
+  OG_IMAGE_HREF,
   REPO_URL,
   WPANCHORBAY_URL,
+  WPANCHORBAY_PLUGIN_URL,
   buildAbsoluteUrl,
-} from '../../site-config.mjs';
+} from "../../site-config.mjs";
 
 // ---------------------------------------------------------------------------
 // External (third-party) URLs
@@ -32,14 +34,17 @@ export const EXTERNAL_LINKS = {
   /** WPAnchorBay main website */
   wpAnchorBay: WPANCHORBAY_URL,
 
+  /** WPAnchorBay plugin website */
+  wpAnchorBayPlugin: WPANCHORBAY_PLUGIN_URL,
+
   /** GitHub repository for this documentation project */
   githubRepo: REPO_URL,
 
   /** Astro framework website */
-  astro: 'https://astro.build/',
+  astro: "https://astro.build/",
 
   /** Starlight official getting-started guide */
-  starlightGettingStarted: 'https://starlight.astro.build/getting-started/',
+  starlightGettingStarted: "https://starlight.astro.build/getting-started/",
 } as const;
 
 // ---------------------------------------------------------------------------
@@ -70,6 +75,9 @@ export const PAGE_LINKS = {
 export const ASSET_LINKS = {
   /** Site favicon and navbar logo icon (SVG) */
   icon: ICON_HREF,
+
+  /** OpenGraph share image (PNG) */
+  ogImage: OG_IMAGE_HREF,
 } as const;
 
 // ---------------------------------------------------------------------------
@@ -78,17 +86,20 @@ export const ASSET_LINKS = {
 
 export const FEED_LINKS = {
   /** Canonical root URL */
-  canonical: buildAbsoluteUrl('/'),
+  canonical: buildAbsoluteUrl("/"),
+
+  /** Absolute URL of the OpenGraph share image */
+  ogImage: buildAbsoluteUrl("/assets/WPAnchorBay-Documentation-OG.png"),
 
   /** XML sitemap index */
-  sitemap: buildAbsoluteUrl('/sitemap-index.xml'),
+  sitemap: buildAbsoluteUrl("/sitemap-index.xml"),
 
   /** LLM-friendly documentation index */
-  llms: buildAbsoluteUrl('/llms.txt'),
+  llms: buildAbsoluteUrl("/llms.txt"),
 
   /** LLM-friendly full documentation */
-  llmsFull: buildAbsoluteUrl('/llms-full.txt'),
+  llmsFull: buildAbsoluteUrl("/llms-full.txt"),
 
   /** MCP server documentation page */
-  mcpDocs: buildAbsoluteUrl('/agents/mcp-server/'),
+  mcpDocs: buildAbsoluteUrl("/agents/mcp-server/"),
 } as const;

@@ -81,6 +81,12 @@ export default defineConfig({
           label: "Resources",
           items: [{ label: "Starlight Docs", slug: "resources/official-docs" }],
         },
+        {
+          label: "Others",
+          items: [
+            { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
+          ],
+        },
       ],
     }),
   ],
