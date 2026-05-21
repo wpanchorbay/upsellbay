@@ -295,7 +295,7 @@ Agents and contributors must read `.agents/CONTENT_AUTHORING.md` before creating
 Before launch, search for and replace these placeholders unless intentionally retained:
 
 - `Documentation Boilerplate`
-- `documentation-boilerplate-starlight`
+- `docs-boilerplate-starlight`
 - accidental `WPAnchorBay` references outside the intended WPAnchorBay footer/source-brand context
 - accidental `wpanchorbay` references outside intended asset names, footer/source-brand links, or WPAnchorBay-owned deployment defaults
 - `example.com`

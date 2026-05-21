@@ -1,5 +1,5 @@
 {
-  "name": "documentation-boilerplate-starlight",
+  "name": "docs-boilerplate-starlight",
   "type": "module",
   "version": "0.0.1",
   "description": "A reusable Astro Starlight boilerplate based on WPAnchorBay standards.",

@@ -124,7 +124,7 @@ Use this checklist when adapting the Documentation Boilerplate for a new project
 
 - [ ] Search the codebase for `wpanchorbay` — keep intentional WPAnchorBay footer/source-brand references and WPAnchorBay-owned defaults; replace accidental project placeholders.
 - [ ] Search for `example.com` — replace with the real domain or remove.
-- [ ] Search for `documentation-boilerplate-starlight` — replace in any user-visible strings (keep in `BASE_PATH` only if that is the actual repo name).
+- [ ] Search for `docs-boilerplate-starlight` — replace in any user-visible strings (keep in `BASE_PATH` only if that is the actual repo name).
 - [ ] Confirm no component or page hardcodes a URL that should come from `src/lib/links.ts`.
 - [ ] Verify all footer links, social links, and nav links resolve correctly. Confirm the navbar GitHub link is hidden when `REPO_URL` is empty.
 - [ ] Verify the "Edit this page" GitHub links point to the correct repository.

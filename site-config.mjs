@@ -3,11 +3,11 @@ export const SITE_ORIGIN =
   process.env.PUBLIC_SITE_ORIGIN ||
   "https://docs.wpanchorbay.com";
 
-export const BASE_PATH = "/documentation-boilerplate-starlight";
+export const BASE_PATH = "/docs-boilerplate-starlight";
 
 export const REPO_URL =
   process.env.DOCS_REPO_URL ??
-  "https://github.com/wpanchorbay/documentation-boilerplate-starlight";
+  "https://github.com/wpanchorbay/docs-boilerplate-starlight";
 
 export const LOGO_SVG_PATH = "./src/assets/wpanchorbay-icon.svg";
 
