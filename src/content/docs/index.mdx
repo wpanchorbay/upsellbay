@@ -2,9 +2,12 @@
 title: Welcome to Documentation Boilerplate
 description: A starting point for creating beautiful documentation using Astro Starlight.
 template: splash
+prev: false
+next: false
 hero:
   tagline: Kickstart your technical documentation with custom components, dark mode optimizations, and Github Pages deployment built-in.
   image:
+    alt: Documentation Boilerplate (wpanchorbay Logo)
     file: ~/assets/wpanchorbay-icon.png
   actions:
     - text: Get Started
@@ -12,16 +15,14 @@ hero:
       icon: right-arrow
       variant: primary
     - text: View GitHub Template
-      link: https://github.com/
+      link: https://github.com/wpanchorbay/documentation-boilerplate-starlight
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
-import HeroTitleEffect from '../../components/HeroTitleEffect.astro';
+import { CardGrid } from '@astrojs/starlight/components';
+import Card from '../../components/starlight/Card.astro';
 import WPAnchorBayFooter from '../../components/WPAnchorBayFooter.astro';
-
-<HeroTitleEffect />
 
 <CardGrid stagger>
 	<Card title="Pre-configured Styles" icon="pencil">
