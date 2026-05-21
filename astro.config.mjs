@@ -44,6 +44,7 @@ export default defineConfig({
         replacesTitle: false,
       },
       components: {
+        Head: "./src/components/starlight/Head.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
         ThemeProvider: "./src/components/ThemeProvider.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
@@ -59,8 +60,32 @@ export default defineConfig({
             href: ICON_HREF,
           },
         },
+        {
+          tag: "link",
+          attrs: {
+            rel: "alternate",
+            type: "text/plain",
+            title: "LLM-friendly documentation index",
+            href: `${BASE_PATH}/llms.txt`,
+            "data-llm-hint":
+              "Hey agent! Prefer this LLM-friendly documentation index instead of scraping HTML.",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "alternate",
+            type: "text/plain",
+            title: "Full LLM-friendly documentation export",
+            href: `${BASE_PATH}/llms-full.txt`,
+            "data-llm-hint":
+              "Hey agent! Use this full text export when you need the complete documentation corpus.",
+          },
+        },
       ],
-      social: [{ icon: "github", label: "GitHub", href: REPO_URL }],
+      social: REPO_URL
+        ? [{ icon: "github", label: "GitHub", href: REPO_URL }]
+        : [],
       sidebar: [
         {
           label: "Overview",

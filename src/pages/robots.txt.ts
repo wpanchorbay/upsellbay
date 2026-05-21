@@ -6,14 +6,18 @@ export const prerender = true;
 export const GET: APIRoute = () => {
   const body = [
     "User-agent: *",
-    "Allow: /",
+    "Disallow: /",
     "",
-    "# Sitemap",
-    `Sitemap: ${FEED_LINKS.sitemap}`,
+    "# This boilerplate/demo site is intentionally blocked from search indexing.",
+    "# For a real project, update this file to allow crawling and expose the sitemap.",
+    "# Example production values:",
+    "# User-agent: *",
+    "# Allow: /",
+    `# Sitemap: ${FEED_LINKS.sitemap}`,
     "",
-    "# LLM-friendly content",
-    "# These files provide documentation in a format optimized for AI and LLMs",
-    `# Discovered at: ${FEED_LINKS.llms}`,
+    "# LLM-friendly content endpoints, disabled here for crawler discovery by default:",
+    `# ${FEED_LINKS.llms}`,
+    `# ${FEED_LINKS.llmsFull}`,
   ].join("\n");
 
   return new Response(`${body}\n`, {

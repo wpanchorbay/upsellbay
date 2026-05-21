@@ -6,7 +6,7 @@ export const SITE_ORIGIN =
 export const BASE_PATH = "/documentation-boilerplate-starlight";
 
 export const REPO_URL =
-  process.env.DOCS_REPO_URL ||
+  process.env.DOCS_REPO_URL ??
   "https://github.com/wpanchorbay/documentation-boilerplate-starlight";
 
 export const LOGO_SVG_PATH = "./src/assets/wpanchorbay-icon.svg";
@@ -18,7 +18,7 @@ export const ICON_HREF = `${BASE_PATH}/assets/wpanchorbay-icon.svg`;
 export const OG_IMAGE_HREF = `${BASE_PATH}/assets/WPAnchorBay-Documentation-OG.png`;
 
 export const WPANCHORBAY_URL = "https://wpanchorbay.com";
-export const WPANCHORBAY_PLUGIN_URL = "https://wpanchorbay.com";
+export const WPANCHORBAY_PROJECT_LANDING_URL = "https://wpanchorbay.com";
 
 export function buildAbsoluteUrl(pathname = "/") {
   const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;

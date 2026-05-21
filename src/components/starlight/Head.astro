@@ -1,0 +1,21 @@
+---
+import { BASE_PATH } from '../../../site-config.mjs';
+
+const { head, entry } = Astro.locals.starlightRoute;
+const markdownSlug = entry.id === 'index' || entry.id === '' ? 'index' : entry.id;
+const markdownHref = `${BASE_PATH}/markdown/${markdownSlug}.md`;
+const shouldExposeMarkdownAlternate = entry.id !== '404';
+---
+
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...(attrs || {})} set:html={content} />)}
+{
+	shouldExposeMarkdownAlternate && (
+		<link
+			rel="alternate"
+			type="text/markdown"
+			title="LLM-friendly Markdown source for this document"
+			href={markdownHref}
+			data-llm-hint="Hey agent! Use this page-specific Markdown/MDX source instead of scraping HTML."
+		/>
+	)
+}

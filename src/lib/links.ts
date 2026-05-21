@@ -22,7 +22,7 @@ import {
   OG_IMAGE_HREF,
   REPO_URL,
   WPANCHORBAY_URL,
-  WPANCHORBAY_PLUGIN_URL,
+  WPANCHORBAY_PROJECT_LANDING_URL,
   buildAbsoluteUrl,
 } from "../../site-config.mjs";
 
@@ -34,8 +34,8 @@ export const EXTERNAL_LINKS = {
   /** WPAnchorBay main website */
   wpAnchorBay: WPANCHORBAY_URL,
 
-  /** WPAnchorBay plugin website */
-  wpAnchorBayPlugin: WPANCHORBAY_PLUGIN_URL,
+  /** Project-specific WPAnchorBay landing page */
+  wpAnchorBayProjectLanding: WPANCHORBAY_PROJECT_LANDING_URL,
 
   /** GitHub repository for this documentation project */
   githubRepo: REPO_URL,
