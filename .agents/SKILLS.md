@@ -162,13 +162,20 @@ Keep and update:
 
 - `src/content/docs/others/ai-crawler.mdx`
 
-Then create new docs organized by project-specific categories such as:
+Then create new docs organized by project-specific categories.
 
-- Overview
-- Getting Started
-- Installation / Setup
-- Configuration
+The recommended first section should be **Getting Started**, with pages in this order:
+
+- Introduction
+- Requirements
+- Installation
+- License Activation, if applicable
+- Quick Start
+
+After Getting Started, add other relevant sections such as:
+
 - Concepts
+- Configuration
 - Guides
 - API Reference
 - Integrations
