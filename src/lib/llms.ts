@@ -28,6 +28,7 @@ export function renderLlmsIndex(entries: LLMDocEntry[]) {
     "# License Server Documentation",
     "",
     `Canonical: ${FEED_LINKS.canonical}`,
+    `Full documentation export: ${FEED_LINKS.llmsFull}`,
     "",
     "## Docs Index",
     "",
