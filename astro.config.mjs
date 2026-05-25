@@ -38,7 +38,7 @@ export default defineConfig({
       title: "Documentation Boilerplate",
       description:
         "A reusable boilerplate for jumping starting Starlight documentation.",
-      customCss: ["./src/styles/home.css"],
+      customCss: ["./src/styles/home.css", "./src/styles/content-images.css"],
       logo: {
         src: LOGO_SVG_PATH,
         replacesTitle: false,

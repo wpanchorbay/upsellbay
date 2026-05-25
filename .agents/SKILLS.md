@@ -259,6 +259,7 @@ Agents and contributors must read `.agents/CONTENT_AUTHORING.md` before creating
 - Code blocks.
 - Tabs.
 - Callouts.
+- Images (borders, lightbox).
 
 ---
 
@@ -273,6 +274,56 @@ Agents and contributors must read `.agents/CONTENT_AUTHORING.md` before creating
 - Prefer Lucide Icons for visual consistency.
 - Add missing icons to `src/components/starlight/icon-map.ts` using SVG path data.
 - Do not add Tailwind CSS or utility-class styling unless explicitly requested.
+
+### Images & Lightbox
+
+All images inside `.sl-markdown-content` (i.e. rendered Markdown/MDX pages) automatically receive a rounded border via `src/styles/content-images.css`. The lightbox JS lives in `src/components/starlight/Head.astro` and is opt-in via `data-lightbox="true"`.
+
+**Place screenshots in `public/assets/screenshots/`.** They are served at `{BASE_PATH}/assets/screenshots/your-image.png`.
+
+| Syntax | Border + radius | Click opens lightbox |
+|---|---|---|
+| `![alt](src)` — standard Markdown | ✅ yes | ❌ no |
+| `<img data-lightbox="true">` | ✅ yes | ✅ yes |
+| `<img data-no-border>` | ❌ no | ❌ no |
+| `<img data-lightbox="true" data-no-border>` | ❌ no | ✅ yes |
+
+**Border + lightbox** — use raw HTML `<img>` with `data-lightbox="true"`:
+```html
+<img
+  src="/{BASE_PATH}/assets/screenshots/your-image.png"
+  alt="Description"
+  data-lightbox="true"
+/>
+```
+
+**Border only** — standard Markdown syntax (lightbox is opt-in only):
+```markdown
+![alt text](/{BASE_PATH}/assets/screenshots/your-image.png)
+```
+
+**No border, no lightbox** — use `data-no-border`:
+```html
+<img
+  src="/{BASE_PATH}/assets/screenshots/your-image.png"
+  alt="Description"
+  data-no-border
+/>
+```
+
+**Lightbox but no border** — combine both:
+```html
+<img
+  src="/{BASE_PATH}/assets/screenshots/your-image.png"
+  alt="Description"
+  data-lightbox="true"
+  data-no-border
+/>
+```
+
+The lightbox closes on: clicking the dark backdrop, clicking the **x** button, or pressing **Escape**.
+
+See `src/content/docs/guides/example.md` for live examples of all four variants.
 
 ---
 
