@@ -1,6 +1,6 @@
 ---
 title: Welcome to UpsellBay
-description: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
+description: Increase WooCommerce average order value (AOV) with native order bumps and journey-integrated offers.
 template: splash
 prev: false
 next: false
@@ -22,7 +22,7 @@ head:
   - tag: meta
     attrs:
       property: og:description
-      content: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
+      content: Increase WooCommerce average order value (AOV) with native order bumps and journey-integrated offers.
   # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
   - tag: meta
     attrs:
@@ -52,7 +52,7 @@ head:
   - tag: meta
     attrs:
       name: twitter:description
-      content: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
+      content: Increase WooCommerce average order value (AOV) with native order bumps and journey-integrated offers.
   # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
   - tag: meta
     attrs:
@@ -63,35 +63,108 @@ head:
       name: twitter:image:alt
       content: UpsellBay Documentation – WPAnchorBay
 hero:
-  tagline: Increase WooCommerce average order value with native order bumps and offers that work on the merchant's existing checkout without funnel-builder lock-in.
+  tagline: Increase WooCommerce average order value (AOV) with native order bumps and offers that work on the merchant's existing checkout without funnel-builder lock-in.
   image:
     alt: UpsellBay Icon
-    file: ~/assets/iocn_upsellbay.svg
+    file: ../../assets/upsellbay-icon.svg
   actions:
     - text: Get Started
       # PAGE_LINKS.introduction — cannot use JS expressions in YAML frontmatter
       link: /upsellbay/getting-started/introduction/
       icon: right-arrow
       variant: primary
+    - text: Product Page
+      # EXTERNAL_LINKS.githubRepo — cannot use JS expressions in YAML frontmatter
+      link: https://wpanchorbay.com/plugins/upsellbay
+      icon: external
+      variant: minimal
 ---
 
 import { CardGrid } from '@astrojs/starlight/components';
 import Card from '../../components/starlight/Card.astro';
 import WPAnchorBayFooter from '../../components/WPAnchorBayFooter.astro';
 
+
+## What UpsellBay Is
+
+UpsellBay is a WooCommerce-native offer engine that helps merchants increase average order value without replacing the existing store journey. It adds relevant offers directly into the places shoppers already use:
+
+- Product pages
+- Cart
+- Checkout
+- Thank-you pages
+
+It is built for stores that want measurable upsells, cross-sells, and order bumps while keeping WooCommerce familiar for both shoppers and store teams.
+
+## What Problems It Solves
+
+UpsellBay is designed for stores that want to grow order value without adding funnel-builder complexity or disrupting checkout. It helps solve a few common problems:
+
+- Shoppers miss relevant add-ons because offers appear too late or not at all
+- Cross-sells feel disconnected from the actual WooCommerce journey
+- Checkout upsells often require replacing or heavily customizing checkout
+- Store teams need offer performance data without collecting customer PII
+- Merchants want higher AOV without rebuilding storefront flows that already work
+
+## Who Should Use It
+
+UpsellBay is a good fit for:
+
+- WooCommerce merchants who want to increase AOV with native offers
+- Store managers who need a simple, operational workflow inside **WooCommerce -> UpsellBay**
+- Agencies building upsell systems for client stores without introducing a custom funnel stack
+- Teams that want product, cart, checkout, and thank-you offers in one plugin
+
+It is especially useful when you want stronger merchandising and better offer visibility while preserving your current checkout experience.
+
+## How It Works
+
+UpsellBay follows the existing WooCommerce buying journey instead of replacing it:
+
+1. Create an offer in the UpsellBay admin.
+2. Choose the placement, product, discount, schedule, and targeting rules.
+3. UpsellBay checks whether the offer is eligible for the current shopper and context.
+4. Eligible offers render in supported storefront locations.
+5. UpsellBay tracks aggregate results such as views, accepts, dismissals, revenue, and discounts.
+
+This lets you test and optimize offers across the full journey while keeping the storefront recognizable and stable.
+
+## What These Docs Cover
+
+This documentation matches the current UpsellBay plugin implementation. It focuses on:
+
+- Merchant setup and daily operations inside **WooCommerce -> UpsellBay**
+- Offer creation, field-by-field configuration, and storefront behavior
+- Settings, diagnostics, licensing, and retention controls
+- Storefront expectations for product, cart, checkout, and thank-you placements
+- Developer-facing architecture and extension notes
+
+<br />
+<br />
+<br />
+
 <CardGrid stagger>
 	<Card title="Quick Start Guide" icon="rocket" href="/upsellbay/getting-started/quick-start/">
-		Configure and deploy your first WooCommerce checkout order bump in under 15 minutes.
+		Create a real first offer, preview it safely in test mode, and understand what to verify before going live.
 	</Card>
 	<Card title="Manage Offers" icon="pencil" href="/upsellbay/usage/offers/01-overview/">
-		Explore offer priorities, statuses, targeting rule groups, and impression analytics.
+		Learn the full offer workflow, from the Offers table to the Add Offer screen, targeting rules, and performance review.
 	</Card>
 	<Card title="Storefront Placements" icon="setting" href="/upsellbay/storefront/placements/">
-		Understand checkout bumps, product page templates, and cart layouts hooks.
+		See where UpsellBay renders on product, cart, checkout, and thank-you pages and how placement limits affect visibility.
 	</Card>
-	<Card title="Developer Reference" icon="open-book" href="/upsellbay/developer/architecture/">
-		Inspect namespaces, service containers, custom tables schema, and extension points.
+	<Card title="Developer Reference" icon="open-book" href="/upsellbay/developer/">
+		Inspect the public architecture, storage contracts, REST routes, and hooks available to external developers.
 	</Card>
 </CardGrid>
+
+<br />
+
+## Best Starting Points
+
+- New store: [Introduction](/upsellbay/getting-started/introduction/) -> [Setup Wizard](/upsellbay/getting-started/setup-wizard/) -> [Quick Start](/upsellbay/getting-started/quick-start/)
+- Offer builders: [Offers Overview](/upsellbay/usage/offers/01-overview/) -> [Creating an Offer](/upsellbay/usage/offers/02-create/) -> [Targeting Rules](/upsellbay/usage/offers/04-targeting-rules/)
+- Store managers: [Dashboard](/upsellbay/usage/dashboard/) -> [General Settings](/upsellbay/usage/settings/01-general/) -> [Data Settings](/upsellbay/usage/settings/02-data/)
+- Operations and support: [Help & Diagnostics](/upsellbay/usage/help/) -> [Compatibility Guide](/upsellbay/compatibility/) -> [Data Retention](/upsellbay/data-retention/)
 
 <WPAnchorBayFooter />
