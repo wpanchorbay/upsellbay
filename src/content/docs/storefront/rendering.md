@@ -13,8 +13,3 @@ description: AJAX loading and theme rendering behavior for storefront offers.
 ## CSS Isolation
 
 All styling uses specific prefix namespaces (`#upsellbay-*` and `.upsellbay-*`) to prevent styling bleed to theme classes.
-
-## Related Topics
-
-- [Storefront Performance](../performance)
-- [Display Settings](../../usage/settings/02-display)

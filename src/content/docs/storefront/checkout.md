@@ -16,8 +16,3 @@ Integrated using WooCommerce's Additional Checkout Fields API. Displays a checkl
 ## Accessibility
 
 All checkout toggles support screen readers, label associations, and keyboard navigation.
-
-## Related Topics
-
-- [Offer Acceptance & Rejection](../acceptance)
-- [Mobile Responsiveness](../mobile)

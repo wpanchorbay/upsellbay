@@ -10,8 +10,3 @@ UpsellBay storefront layouts follow native WooCommerce structures to feel like a
 - **Zero Intrusion:** No full-screen intrusive popups or disruptive modals.
 - **Unified Branding:** Inherit typography and margins from active themes.
 - **No Layout Shift:** Reserve layout spaces to prevent page jumping during AJAX execution.
-
-## Related Topics
-
-- [Customer Journey](../customer-journey)
-- [Placement Locations](../placements)

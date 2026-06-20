@@ -12,8 +12,3 @@ Product Page Add-on ──> Cart Threshold Promo ──> Checkout Order Bump ─
 ```
 
 Offers are evaluated dynamically at each step, and accepting one offer modifies future rules (e.g., dismissing an checkout bump keeps thank-you offers eligible).
-
-## Related Topics
-
-- [Checkout Bumps](../checkout)
-- [Offer Acceptance & Rejection](../acceptance)

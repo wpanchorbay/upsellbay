@@ -9,8 +9,3 @@ Offers on the Cart page are optimized for cross-selling and goal threshold remin
 
 - **Dynamic Cart Calculations:** Adding cart items recalculates rules and totals instantly.
 - **Threshold Visualizer:** Custom notices show progress towards incentives like free shipping.
-
-## Related Topics
-
-- [Customer Journey](../customer-journey)
-- [Mobile Responsiveness](../mobile)
