@@ -35,7 +35,7 @@ const { centered = false, size = 'md' } = Astro.props;
 	}
 
 	.theme-switch {
-		--toggle-accent: #5865f2;
+		--toggle-accent: var(--sl-color-accent);
 		--toggle-border: color-mix(in srgb, var(--toggle-accent) 22%, var(--sl-color-hairline));
 		--toggle-bg-top: color-mix(in srgb, var(--sl-color-bg-nav) 84%, white 16%);
 		--toggle-bg-bottom: color-mix(in srgb, var(--sl-color-bg) 88%, white 12%);
@@ -57,7 +57,7 @@ const { centered = false, size = 'md' } = Astro.props;
 		background: linear-gradient(180deg, var(--toggle-bg-top) 0%, var(--toggle-bg-bottom) 100%);
 		box-shadow:
 			0 1px 0 color-mix(in srgb, #fff 70%, transparent) inset,
-			0 12px 26px color-mix(in srgb, #5865f2 10%, transparent);
+			0 12px 26px color-mix(in srgb, var(--toggle-accent) 10%, transparent);
 		color: var(--toggle-text);
 		font-size: var(--toggle-font-size);
 		font-weight: 700;

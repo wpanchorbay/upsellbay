@@ -33,37 +33,40 @@ a:hover {
 }
 
 .actions .minimal:hover {
-    background: #afdbf5;
+    background: rgba(245, 192, 0, 0.15);
 }
 
 .actions .primary {
-    background: #5765f2;
+    background: var(--sl-color-accent);
+    color: var(--sl-color-bg);
 }
 
 .actions .primary:hover {
-    background: #3d50f5;
+    background: color-mix(in srgb, var(--sl-color-accent) 84%, black 16%);
+    color: var(--sl-color-bg);
 }
 
 :root[data-theme="dark"] .actions .minimal {
-    background: color-mix(in srgb, #0f172a 72%, #1f2b4d 28%);
-    border-color: color-mix(in srgb, #8ea2ff 28%, transparent);
-    color: #dbe5ff;
+    background: color-mix(in srgb, #1c1809 72%, #2c250e 28%);
+    border-color: color-mix(in srgb, var(--sl-color-accent) 28%, transparent);
+    color: var(--sl-color-text-accent);
 }
 
 :root[data-theme="dark"] .actions .minimal:hover {
-    background: color-mix(in srgb, #1d2b57 70%, #7a8dff 30%);
+    background: color-mix(in srgb, var(--sl-color-accent-low) 70%, var(--sl-color-accent) 30%);
     color: #ffffff;
 }
 
 :root[data-theme="dark"] .actions .primary {
-    background: #6a78ff;
-    border-color: #7e8aff;
-    color: #ffffff;
+    background: var(--sl-color-accent);
+    border-color: var(--sl-color-accent-high);
+    color: var(--sl-color-bg);
 }
 
 :root[data-theme="dark"] .actions .primary:hover {
-    background: #7a86ff;
-    border-color: #93a0ff;
+    background: var(--sl-color-accent-high);
+    border-color: var(--sl-color-white);
+    color: var(--sl-color-bg);
 }
 
 /* Scrollbar Dimensions - Chrome, Edge, Safari */
@@ -190,6 +193,14 @@ html[data-has-hero] body {
 }
 
 :root {
+    /* Starlight Brand Accent Color Variables (Dark Mode Default) */
+    --sl-color-accent: #f5c000;
+    --sl-color-text-accent: #ffc800;
+    --sl-color-bg-accent: rgba(245, 192, 0, 0.1);
+    --sl-color-border-accent: rgba(245, 192, 0, 0.4);
+    --sl-color-accent-high: #ffd633;
+    --sl-color-accent-low: #332800;
+
     --license-nav-bg: color-mix(
         in srgb,
         var(--sl-color-bg-nav) 76%,
@@ -202,20 +213,28 @@ html[data-has-hero] body {
     );
     --license-hero-gradient: linear-gradient(
         176deg,
-        rgba(222, 224, 255, 1) 0%,
+        rgba(255, 250, 224, 1) 0%,
         rgba(255, 255, 255, 1) 50%,
         rgba(255, 255, 255, 1) 100%
     );
     --license-hero-shadow: drop-shadow(
-        0 28px 60px color-mix(in srgb, #5765f2 28%, transparent)
+        0 28px 60px color-mix(in srgb, #f5c000 28%, transparent)
     );
     --license-hero-shadow-hover: drop-shadow(
-            0 32px 76px color-mix(in srgb, #5765f2 46%, transparent)
+            0 32px 76px color-mix(in srgb, #f5c000 46%, transparent)
         )
-        drop-shadow(0 10px 24px color-mix(in srgb, #5765f2 34%, transparent));
+        drop-shadow(0 10px 24px color-mix(in srgb, #f5c000 34%, transparent));
 }
 
 :root[data-theme="light"] {
+    /* Starlight Brand Accent Color Variables (Light Mode) */
+    --sl-color-accent: #d9a300;
+    --sl-color-text-accent: #b88600;
+    --sl-color-bg-accent: rgba(245, 192, 0, 0.08);
+    --sl-color-border-accent: rgba(245, 192, 0, 0.25);
+    --sl-color-accent-high: #a37200;
+    --sl-color-accent-low: #fffceb;
+
     --license-nav-bg: color-mix(in srgb, #fff 70%, transparent);
     --license-nav-border: color-mix(in srgb, #0f172a 12%, transparent);
 }
@@ -225,15 +244,15 @@ html[data-has-hero] body {
     --license-nav-border: color-mix(in srgb, #fff 10%, transparent);
     --license-hero-gradient: linear-gradient(
         176deg,
-        color-mix(in srgb, #5865f2 28%, var(--sl-color-bg) 72%) 0%,
+        color-mix(in srgb, #f5c000 28%, var(--sl-color-bg) 72%) 0%,
         var(--sl-color-bg) 56%,
         var(--sl-color-bg) 100%
     );
-    --license-hero-shadow: drop-shadow(0 24px 48px rgba(88, 101, 242, 0.18));
+    --license-hero-shadow: drop-shadow(0 24px 48px rgba(245, 192, 0, 0.18));
     --license-hero-shadow-hover: drop-shadow(
-            0 28px 64px rgba(88, 101, 242, 0.32)
+            0 28px 64px rgba(245, 192, 0, 0.32)
         )
-        drop-shadow(0 8px 20px rgba(88, 101, 242, 0.22));
+        drop-shadow(0 8px 20px rgba(245, 192, 0, 0.22));
 }
 
 /* ── Standard Docs Page Layout (Non-Index) ── */
@@ -429,20 +448,20 @@ html[data-has-hero] body {
             color-mix(in srgb, #5865f2 24%, #11182c 76%) 0%,
             color-mix(in srgb, #39cccc 14%, #0b1321 86%) 100%
         );
-    border-color: color-mix(in srgb, #7f8cff 28%, rgba(255, 255, 255, 0.08));
+    border-color: color-mix(in srgb, var(--sl-color-accent) 28%, rgba(255, 255, 255, 0.08));
     box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.08) inset,
-        0 34px 76px rgba(88, 101, 242, 0.24);
+        0 34px 76px rgba(245, 192, 0, 0.24);
 }
 
 :root[data-theme="dark"] .license-404-mark {
-    filter: drop-shadow(0 12px 28px rgba(88, 101, 242, 0.22));
+    filter: drop-shadow(0 12px 28px rgba(245, 192, 0, 0.22));
 }
 
 :root[data-theme="dark"] .license-404-links a {
     background: color-mix(in srgb, #11182c 76%, var(--sl-color-bg-nav) 24%);
-    border-color: color-mix(in srgb, #7f8cff 18%, var(--sl-color-hairline));
-    box-shadow: 0 16px 28px rgba(88, 101, 242, 0.14);
+    border-color: color-mix(in srgb, var(--sl-color-accent-high) 18%, var(--sl-color-hairline));
+    box-shadow: 0 16px 28px rgba(245, 192, 0, 0.14);
 }
 
 :root[data-theme="dark"] .wpanchor-bay-logo {
@@ -450,24 +469,24 @@ html[data-has-hero] body {
 }
 
 .pagination-links a {
-    background-color: #e0ffff;
-    border: 1px solid #afdbf5;
+    background-color: var(--sl-color-accent-low);
+    border: 1px solid var(--sl-color-border-accent);
     box-shadow: none;
     text-decoration: none;
 }
 
 .pagination-links a:hover {
-    background-color: #b2ffff;
+    background-color: color-mix(in srgb, var(--sl-color-accent-low) 80%, var(--sl-color-accent) 20%);
     box-shadow: var(--sl-shadow-md);
 }
 
 :root[data-theme="dark"] .pagination-links a {
-    background-color: color-mix(in srgb, #0f172a 70%, #1f2b4d 30%);
-    border-color: color-mix(in srgb, #8ea2ff 20%, transparent);
+    background-color: color-mix(in srgb, var(--sl-color-bg-nav) 70%, var(--sl-color-accent-low) 30%);
+    border-color: color-mix(in srgb, var(--sl-color-accent) 20%, transparent);
     color: var(--sl-color-white);
 }
 
 :root[data-theme="dark"] .pagination-links a:hover {
-    background-color: color-mix(in srgb, #1d2b57 70%, #7a8dff 30%);
-    border-color: color-mix(in srgb, #8ea2ff 40%, transparent);
+    background-color: color-mix(in srgb, var(--sl-color-accent-low) 70%, var(--sl-color-accent) 30%);
+    border-color: color-mix(in srgb, var(--sl-color-accent-high) 40%, transparent);
 }
