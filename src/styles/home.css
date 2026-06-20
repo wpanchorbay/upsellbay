@@ -149,7 +149,7 @@ html[data-has-hero] body {
     animation-duration: 4s !important;
     animation-timing-function: ease-in-out !important;
     animation-iteration-count: infinite !important;
-    filter: drop-shadow(0 28px 60px rgba(87, 101, 242, 0.28));
+    filter: drop-shadow(0 28px 60px rgba(245, 192, 0, 0.28));
     transition:
         filter 0.4s ease,
         transform 0.4s ease;
@@ -164,25 +164,25 @@ html[data-has-hero] body {
 
 /* ── Light mode hover ── */
 [data-has-hero] .hero img:hover {
-    filter: drop-shadow(0 8px 24px rgba(87, 101, 242, 0.34))
-        drop-shadow(0 32px 76px rgba(87, 101, 242, 0.46));
+    filter: drop-shadow(0 8px 24px rgba(245, 192, 0, 0.34))
+        drop-shadow(0 32px 76px rgba(245, 192, 0, 0.46));
     transform: translateY(-0.5rem) !important;
 }
 
 /* ── Dark mode base: 4-layer opacity ramp ── */
 :root[data-theme="dark"] [data-has-hero] .hero img {
-    filter: drop-shadow(0 4px 16px rgba(88, 101, 242, 0.08))
-        drop-shadow(0 8px 32px rgba(88, 101, 242, 0.1))
-        drop-shadow(0 16px 56px rgba(88, 101, 242, 0.1))
-        drop-shadow(0 24px 80px rgba(88, 101, 242, 0.07));
+    filter: drop-shadow(0 4px 16px rgba(245, 192, 0, 0.08))
+        drop-shadow(0 8px 32px rgba(245, 192, 0, 0.1))
+        drop-shadow(0 16px 56px rgba(245, 192, 0, 0.1))
+        drop-shadow(0 24px 80px rgba(245, 192, 0, 0.07));
 }
 
 /* ── Dark mode hover: same layer count, stepped up evenly ── */
 :root[data-theme="dark"] [data-has-hero] .hero img:hover {
-    filter: drop-shadow(0 4px 16px rgba(88, 101, 242, 0.14))
-        drop-shadow(0 8px 36px rgba(88, 101, 242, 0.2))
-        drop-shadow(0 18px 64px rgba(88, 101, 242, 0.24))
-        drop-shadow(0 28px 100px rgba(88, 101, 242, 0.16));
+    filter: drop-shadow(0 4px 16px rgba(245, 192, 0, 0.14))
+        drop-shadow(0 8px 36px rgba(245, 192, 0, 0.2))
+        drop-shadow(0 18px 64px rgba(245, 192, 0, 0.24))
+        drop-shadow(0 28px 100px rgba(245, 192, 0, 0.16));
     transform: translateY(-0.5rem) !important;
 }
 
