@@ -1,28 +1,24 @@
 ---
-title: Installation
-description: How to install and set up this documentation boilerplate.
+title: Installing UpsellBay
+description: Step-by-step instructions for uploading and activating the UpsellBay plugin.
 ---
 
-Welcome to the documentation boilerplate. This guide will help you get your local environment running.
+## Installation Steps
 
-## Prerequisites
+1. Log into your WordPress admin dashboard.
+2. Navigate to **Plugins > Add New Plugin**.
+3. Click **Upload Plugin** at the top of the page.
+4. Select the `upsellbay.zip` file from your local computer.
+5. Click **Install Now**.
+6. Once the upload finishes, click **Activate Plugin**.
 
-- Node.js (v24.x recommended)
-- `pnpm` (v10.x or v11.x)
+## Post-Activation Checks
 
-## Setup
+- Verify the **WooCommerce > UpsellBay** menu item appears.
+- Ensure the Action Scheduler has initialized the `upsellbay` queue.
+- If pre-existing configurations exist, check that option migrations complete successfully.
 
-1. Clone or copy this repository to your machine.
-2. Install dependencies:
+## Related Topics
 
-```bash
-pnpm install
-```
-
-3. Start the development server:
-
-```bash
-pnpm dev
-```
-
-Your documentation will be available locally at `http://localhost:4321`.
+- [Setup Wizard](../getting-started/setup-wizard)
+- [License Activation](../getting-started/license-activation)
