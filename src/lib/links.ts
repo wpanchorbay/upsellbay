@@ -74,10 +74,9 @@ export const PAGE_LINKS = {
   offersAnalytics: `${BASE_PATH}/usage/offers/07-analytics/`,
   
   settingsGeneral: `${BASE_PATH}/usage/settings/01-general/`,
-  settingsDisplay: `${BASE_PATH}/usage/settings/02-display/`,
-  settingsIntegrations: `${BASE_PATH}/usage/settings/03-integrations/`,
-  settingsNotifications: `${BASE_PATH}/usage/settings/04-notifications/`,
-  settingsAdvanced: `${BASE_PATH}/usage/settings/05-advanced/`,
+  settingsData: `${BASE_PATH}/usage/settings/02-data/`,
+  settingsLicense: `${BASE_PATH}/usage/settings/03-license/`,
+  settingsLog: `${BASE_PATH}/usage/settings/04-log/`,
   help: `${BASE_PATH}/usage/help/`,
 
   // Storefront
@@ -92,16 +91,11 @@ export const PAGE_LINKS = {
   storefrontPerformance: `${BASE_PATH}/storefront/performance/`,
 
   // Developer
+  developerIndex: `${BASE_PATH}/developer/`,
   developerArchitecture: `${BASE_PATH}/developer/architecture/`,
   developerData: `${BASE_PATH}/developer/data-and-storage/`,
   developerApi: `${BASE_PATH}/developer/rest-api/`,
   developerHooks: `${BASE_PATH}/developer/hooks-and-filters/`,
-  developerJobs: `${BASE_PATH}/developer/background-jobs/`,
-  developerBuild: `${BASE_PATH}/developer/build-process/`,
-  developerEnv: `${BASE_PATH}/developer/development-environment/`,
-  developerTesting: `${BASE_PATH}/developer/testing-and-qa/`,
-  developerTroubleshooting: `${BASE_PATH}/developer/troubleshooting/`,
-  developerRelease: `${BASE_PATH}/developer/release-process/`,
 
   // AI Agents
   agentsOverview: `${BASE_PATH}/agents/overview/`,

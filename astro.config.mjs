@@ -134,29 +134,20 @@ export default defineConfig({
         {
           label: "Developer Docs",
           items: [
+            { label: "Developer Index", slug: "developer" },
             { label: "Architecture Overview", slug: "developer/architecture" },
-            { label: "Data & Storage Schema", slug: "developer/data-and-storage" },
+            { label: "Data & Storage", slug: "developer/data-and-storage" },
             { label: "REST API Reference", slug: "developer/rest-api" },
             { label: "Hooks & Filters", slug: "developer/hooks-and-filters" },
-            { label: "Background Jobs", slug: "developer/background-jobs" },
-            { label: "Build Tooling", slug: "developer/build-process" },
-            { label: "Development Env", slug: "developer/development-environment" },
-            { label: "Testing & QA", slug: "developer/testing-and-qa" },
-            { label: "Troubleshooting Guide", slug: "developer/troubleshooting" },
-            { label: "Release Process", slug: "developer/release-process" },
           ],
         },
         {
-          label: "AI Agents",
+          label: "Reference",
           items: [
-            { label: "Overview & Access", slug: "agents/overview" },
-            { label: "Development Workflows", slug: "agents/workflows" },
-            { label: "Safety Rules & Guardrails", slug: "agents/safety-rules" },
-          ],
-        },
-        {
-          label: "Others",
-          items: [
+            { label: "First Offer Tutorial", slug: "first-offer" },
+            { label: "Compatibility Guide", slug: "compatibility" },
+            { label: "Data Retention", slug: "data-retention" },
+            { label: "Setup Guide", slug: "setup" },
             { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
             { label: "Frequently Asked Questions", slug: "others/faq" },
           ],
