@@ -7,9 +7,9 @@ export const GET: APIRoute = () => {
   return new Response(
     JSON.stringify(
       {
-        name: "License Server Docs MCP",
+        name: "UpsellBay Docs MCP",
         description:
-          "Read-only MCP server for License Server documentation, agent guide, API reference, and troubleshooting guidance.",
+          "Read-only MCP server for UpsellBay documentation, agent guide, API reference, and troubleshooting guidance.",
         documentation: FEED_LINKS.mcpDocs,
         static_docs: {
           llms: FEED_LINKS.llms,
@@ -18,7 +18,7 @@ export const GET: APIRoute = () => {
         },
         transports: {
           stdio: {
-            command: "bun run mcp",
+            command: "pnpm run mcp",
           },
           http: {
             path: "/mcp",

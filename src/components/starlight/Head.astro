@@ -18,7 +18,7 @@ const shouldExposeMarkdownAlternate = entry.id !== '404';
 		/>
 	)
 }
-<script>
+<script is:inline>
 	(function () {
 		const SELECTOR = '.sl-markdown-content img[data-lightbox="true"]';
 		function open(src, alt) {

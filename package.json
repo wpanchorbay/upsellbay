@@ -1,8 +1,8 @@
 {
-  "name": "docs-boilerplate-starlight",
+  "name": "upsellbay-docs",
   "type": "module",
   "version": "0.0.1",
-  "description": "A reusable Astro Starlight boilerplate based on WPAnchorBay standards.",
+  "description": "Documentation for the UpsellBay WooCommerce native offer engine plugin.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
