@@ -7,8 +7,8 @@ import { EXTERNAL_LINKS } from '../../lib/links';
 
 const { social } = config;
 
-// Normalize social links to an array of { href, icon, label }
-const links = social
+// Normalize social links to an array of { href, icon, label }, filtering out the GitHub link
+const links = (social
 	? Array.isArray(social)
 		? social
 		: Object.entries(social).map(([platform, url]) => ({
@@ -16,7 +16,7 @@ const links = social
 				icon: platform,
 				label: platform.charAt(0).toUpperCase() + platform.slice(1),
 			}))
-	: [];
+	: []).filter(link => link.icon !== 'github');
 ---
 
 {

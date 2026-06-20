@@ -17,8 +17,8 @@ export const ICON_HREF = `${BASE_PATH}/assets/wpanchorbay-icon.svg`;
 /** Absolute site-relative path to the OpenGraph share image. */
 export const OG_IMAGE_HREF = `${BASE_PATH}/assets/WPAnchorBay-Documentation-OG.png`;
 
-export const WPANCHORBAY_URL = "https://wpanchorbay.com";
-export const WPANCHORBAY_PROJECT_LANDING_URL = "https://wpanchorbay.com/upsellbay";
+export const WPANCHORBAY_URL = "https://wpanchorbay.com/plugins/upsellbay";
+export const WPANCHORBAY_PROJECT_LANDING_URL = "https://wpanchorbay.com/plugins/upsellbay";
 
 export function buildAbsoluteUrl(pathname = "/") {
   const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
