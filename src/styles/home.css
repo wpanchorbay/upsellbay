@@ -33,7 +33,7 @@ a:hover {
 }
 
 .actions .minimal:hover {
-    background: rgba(245, 192, 0, 0.15);
+    background: rgba(184, 134, 0, 0.15);
 }
 
 .actions .primary {
@@ -149,7 +149,7 @@ html[data-has-hero] body {
     animation-duration: 4s !important;
     animation-timing-function: ease-in-out !important;
     animation-iteration-count: infinite !important;
-    filter: drop-shadow(0 28px 60px rgba(245, 192, 0, 0.28));
+    filter: drop-shadow(0 28px 60px rgba(184, 134, 0, 0.28));
     transition:
         filter 0.4s ease,
         transform 0.4s ease;
@@ -164,25 +164,25 @@ html[data-has-hero] body {
 
 /* ── Light mode hover ── */
 [data-has-hero] .hero img:hover {
-    filter: drop-shadow(0 8px 24px rgba(245, 192, 0, 0.34))
-        drop-shadow(0 32px 76px rgba(245, 192, 0, 0.46));
+    filter: drop-shadow(0 8px 24px rgba(184, 134, 0, 0.34))
+        drop-shadow(0 32px 76px rgba(184, 134, 0, 0.46));
     transform: translateY(-0.5rem) !important;
 }
 
 /* ── Dark mode base: 4-layer opacity ramp ── */
 :root[data-theme="dark"] [data-has-hero] .hero img {
-    filter: drop-shadow(0 4px 16px rgba(245, 192, 0, 0.08))
-        drop-shadow(0 8px 32px rgba(245, 192, 0, 0.1))
-        drop-shadow(0 16px 56px rgba(245, 192, 0, 0.1))
-        drop-shadow(0 24px 80px rgba(245, 192, 0, 0.07));
+    filter: drop-shadow(0 4px 16px rgba(184, 134, 0, 0.08))
+        drop-shadow(0 8px 32px rgba(184, 134, 0, 0.1))
+        drop-shadow(0 16px 56px rgba(184, 134, 0, 0.1))
+        drop-shadow(0 24px 80px rgba(184, 134, 0, 0.07));
 }
 
 /* ── Dark mode hover: same layer count, stepped up evenly ── */
 :root[data-theme="dark"] [data-has-hero] .hero img:hover {
-    filter: drop-shadow(0 4px 16px rgba(245, 192, 0, 0.14))
-        drop-shadow(0 8px 36px rgba(245, 192, 0, 0.2))
-        drop-shadow(0 18px 64px rgba(245, 192, 0, 0.24))
-        drop-shadow(0 28px 100px rgba(245, 192, 0, 0.16));
+    filter: drop-shadow(0 4px 16px rgba(184, 134, 0, 0.14))
+        drop-shadow(0 8px 36px rgba(184, 134, 0, 0.2))
+        drop-shadow(0 18px 64px rgba(184, 134, 0, 0.24))
+        drop-shadow(0 28px 100px rgba(184, 134, 0, 0.16));
     transform: translateY(-0.5rem) !important;
 }
 
@@ -194,10 +194,10 @@ html[data-has-hero] body {
 
 :root {
     /* Starlight Brand Accent Color Variables (Dark Mode Default) */
-    --sl-color-accent: #f5c000;
+    --sl-color-accent: #b88600;
     --sl-color-text-accent: #ffc800;
-    --sl-color-bg-accent: rgba(245, 192, 0, 0.1);
-    --sl-color-border-accent: rgba(245, 192, 0, 0.4);
+    --sl-color-bg-accent: rgba(184, 134, 0, 0.1);
+    --sl-color-border-accent: rgba(184, 134, 0, 0.4);
     --sl-color-accent-high: #ffd633;
     --sl-color-accent-low: #332800;
 
@@ -218,20 +218,20 @@ html[data-has-hero] body {
         rgba(255, 255, 255, 1) 100%
     );
     --license-hero-shadow: drop-shadow(
-        0 28px 60px color-mix(in srgb, #f5c000 28%, transparent)
+        0 28px 60px color-mix(in srgb, #b88600 28%, transparent)
     );
     --license-hero-shadow-hover: drop-shadow(
-            0 32px 76px color-mix(in srgb, #f5c000 46%, transparent)
+            0 32px 76px color-mix(in srgb, #b88600 46%, transparent)
         )
-        drop-shadow(0 10px 24px color-mix(in srgb, #f5c000 34%, transparent));
+        drop-shadow(0 10px 24px color-mix(in srgb, #b88600 34%, transparent));
 }
 
 :root[data-theme="light"] {
     /* Starlight Brand Accent Color Variables (Light Mode) */
-    --sl-color-accent: #d9a300;
+    --sl-color-accent: #b88600;
     --sl-color-text-accent: #b88600;
-    --sl-color-bg-accent: rgba(245, 192, 0, 0.08);
-    --sl-color-border-accent: rgba(245, 192, 0, 0.25);
+    --sl-color-bg-accent: rgba(184, 134, 0, 0.08);
+    --sl-color-border-accent: rgba(184, 134, 0, 0.25);
     --sl-color-accent-high: #a37200;
     --sl-color-accent-low: #fffceb;
 
@@ -244,15 +244,15 @@ html[data-has-hero] body {
     --license-nav-border: color-mix(in srgb, #fff 10%, transparent);
     --license-hero-gradient: linear-gradient(
         176deg,
-        color-mix(in srgb, #f5c000 28%, var(--sl-color-bg) 72%) 0%,
+        color-mix(in srgb, #b88600 28%, var(--sl-color-bg) 72%) 0%,
         var(--sl-color-bg) 56%,
         var(--sl-color-bg) 100%
     );
-    --license-hero-shadow: drop-shadow(0 24px 48px rgba(245, 192, 0, 0.18));
+    --license-hero-shadow: drop-shadow(0 24px 48px rgba(184, 134, 0, 0.18));
     --license-hero-shadow-hover: drop-shadow(
-            0 28px 64px rgba(245, 192, 0, 0.32)
+            0 28px 64px rgba(184, 134, 0, 0.32)
         )
-        drop-shadow(0 8px 20px rgba(245, 192, 0, 0.22));
+        drop-shadow(0 8px 20px rgba(184, 134, 0, 0.22));
 }
 
 /* ── Standard Docs Page Layout (Non-Index) ── */
@@ -304,6 +304,22 @@ html[data-has-hero] body {
 .license-footer p:last-of-type {
     max-width: 58rem;
     color: var(--sl-color-gray-2);
+}
+
+.license-footer-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    width: 100%;
+}
+
+@media (min-width: 50rem) {
+    .license-footer-meta {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media (min-width: 50rem) {
@@ -451,17 +467,17 @@ html[data-has-hero] body {
     border-color: color-mix(in srgb, var(--sl-color-accent) 28%, rgba(255, 255, 255, 0.08));
     box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.08) inset,
-        0 34px 76px rgba(245, 192, 0, 0.24);
+        0 34px 76px rgba(184, 134, 0, 0.24);
 }
 
 :root[data-theme="dark"] .license-404-mark {
-    filter: drop-shadow(0 12px 28px rgba(245, 192, 0, 0.22));
+    filter: drop-shadow(0 12px 28px rgba(184, 134, 0, 0.22));
 }
 
 :root[data-theme="dark"] .license-404-links a {
     background: color-mix(in srgb, #11182c 76%, var(--sl-color-bg-nav) 24%);
     border-color: color-mix(in srgb, var(--sl-color-accent-high) 18%, var(--sl-color-hairline));
-    box-shadow: 0 16px 28px rgba(245, 192, 0, 0.14);
+    box-shadow: 0 16px 28px rgba(184, 134, 0, 0.14);
 }
 
 :root[data-theme="dark"] .wpanchor-bay-logo {
@@ -489,4 +505,19 @@ html[data-has-hero] body {
 :root[data-theme="dark"] .pagination-links a:hover {
     background-color: color-mix(in srgb, var(--sl-color-accent-low) 70%, var(--sl-color-accent) 30%);
     border-color: color-mix(in srgb, var(--sl-color-accent-high) 40%, transparent);
+}
+
+.license-footer-copyright {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-2);
+    opacity: 0.7;
+}
+
+:root[data-theme="dark"] .license-footer-copyright {
+    color: color-mix(
+        in srgb,
+        var(--sl-color-gray-2) 70%,
+        var(--sl-color-gray-3)
+    );
 }
