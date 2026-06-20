@@ -1,25 +1,48 @@
 ---
-title: System Requirements
-description: PHP, WordPress, WooCommerce, and server environment requirements for UpsellBay.
+title: Requirements
+description: Technical requirements and operational assumptions for running UpsellBay in a WooCommerce store.
 ---
 
-## Server & Platform Requirements
+## Minimum Versions
 
-Ensure your server environment satisfies the following minimum requirements before installing UpsellBay:
+UpsellBay currently targets the following minimum platform versions:
 
-- **WordPress:** Version 6.9 or higher (WordPress 7.0+ ready)
-- **WooCommerce:** Version 10.8.x or higher
-- **PHP:** Version 8.1 or higher (PHP 8.2+ recommended)
-- **Database:** MySQL 5.7+ or PostgreSQL equivalents
-- **High-Performance Order Storage (HPOS):** Compatible (must declare compatibility programmatically)
+- PHP `8.1+`
+- WordPress `6.9+`
+- WooCommerce `10.8+`
 
-## Theme & Extension Compatibility
+These version expectations come from the plugin's runtime baseline.
 
-- **Classic Themes:** Full support for hooks like `woocommerce_review_order_before_submit`.
-- **Block Themes:** Compatible with modern Cart and Checkout Blocks using documented WooCommerce APIs.
-- **Payment Gateways:** Works with standard payment processors (e.g., WooPayments, Stripe, PayPal) using redirect-safe follow-on checkouts.
+## WooCommerce Assumptions
 
-## Related Topics
+- WooCommerce must be installed and active
+- Offer products must be valid WooCommerce products
+- The store should use standard WooCommerce data and checkout behavior
+- You should validate your exact theme and plugin stack before live rollout
 
-- [Installing UpsellBay](../getting-started/installation)
-- [Quick Start Guide](../getting-started/quick-start)
+## Recommended Store Conditions
+
+- HTTPS enabled across storefront and checkout
+- A theme that already works well with WooCommerce templates
+- A staging site for validating placement appearance and conflicts
+- At least one completed test order if you plan to use thank-you page offers
+
+## Operational Expectations
+
+- UpsellBay stores aggregate offer analytics without customer PII
+- Order attribution is written through WooCommerce CRUD APIs
+- Offer session behavior is temporary and time-bounded
+- Global settings are stored in one normalized settings option
+
+## Checkout Note
+
+UpsellBay's product direction includes modern WooCommerce compatibility, but you should still validate checkout behavior in your exact environment before rollout. If your store relies heavily on custom checkout extensions or Cart/Checkout Blocks, review the [Compatibility Guide](/upsellbay/compatibility/) and test on staging first.
+
+## Before You Install
+
+Confirm that you have:
+
+1. A WooCommerce store meeting the version requirements above
+2. Permission to manage WooCommerce settings
+3. At least one product you can use as an offer product
+4. A test path for previewing product, cart, checkout, and thank-you placements

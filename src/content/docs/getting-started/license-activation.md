@@ -1,21 +1,36 @@
 ---
 title: License Activation
-description: Activate and manage your premium UpsellBay license.
+description: Activate, check, reactivate, remove, and understand your UpsellBay license state.
 ---
 
-## Activating Your License
+## Where License Management Lives
 
-1. Locate your license key in your WP Anchor Bay account dashboard.
-2. Navigate to **WooCommerce > UpsellBay > License**.
-3. Paste the key into the input field and click **Activate License**.
+Go to **WooCommerce -> UpsellBay -> Settings -> License**.
 
-## Caching and Resilience
+<img
+  src="/upsellbay/assets/screenshots/upsellbay-settings-3-license-inactive.png"
+  alt="UpsellBay Settings: License (Status - Inactive)"
+  data-lightbox="true"
+/>
 
-- **Staging/Local Domains:** Staging and local domains do not consume license slot allocations.
-- **Fail-Open Behavior:** If the licensing server is temporarily unreachable, live storefront offers continue to function without interruption.
-- **Masking:** Full license keys are masked in the admin dashboard and skipped in diagnostics exports.
+### Activate New Key
 
-## Related Topics
+When you purchase a license, you receive a license key through your email or you can get it from your account page on [wpachorbay.com](https://wpanchorbay.com/my-account/) or the platform where you purchased it.
 
-- [Setup Wizard](../getting-started/setup-wizard)
-- [Quick Start Guide](../getting-started/quick-start)
+Input your license key on the **Activate New Key** field and click **Activate License** button. The expected license key format is:
+
+`WPAB-XXXXXXXXXXXX-XXXXXXXXXXXX`
+
+If the format is invalid, Settings returns a validation error instead of sending a malformed request. 
+
+If the license key is valid, the plugin sends a request to the UpsellBay API to activate the license. Once activated, you will see status **Active**.
+
+<img
+  src="/upsellbay/assets/screenshots/upsellbay-settings-3-license-active.png"
+  alt="UpsellBay Settings: License (Status - Active)"
+  data-lightbox="true"
+/>
+
+## Related Settings Reference
+
+For the full field-by-field documentation of this area, see [License Settings](/upsellbay/usage/settings/03-license/).
