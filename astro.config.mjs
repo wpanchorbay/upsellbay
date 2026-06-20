@@ -35,9 +35,9 @@ export default defineConfig({
   integrations: [
     sitemap(),
     starlight({
-      title: "Documentation Boilerplate",
+      title: "UpsellBay Documentation",
       description:
-        "A reusable boilerplate for jumping starting Starlight documentation.",
+        "Learn how to configure, operate, extend, and automate the UpsellBay WooCommerce native offer engine.",
       customCss: ["./src/styles/home.css", "./src/styles/content-images.css"],
       logo: {
         src: LOGO_SVG_PATH,
@@ -94,22 +94,71 @@ export default defineConfig({
         {
           label: "Getting Started",
           items: [
+            { label: "Introduction", slug: "getting-started/introduction" },
+            { label: "Requirements", slug: "getting-started/requirements" },
             { label: "Installation", slug: "getting-started/installation" },
-            { label: "Configuration", slug: "getting-started/configuration" },
+            { label: "Setup Wizard", slug: "getting-started/setup-wizard" },
+            { label: "License Activation", slug: "getting-started/license-activation" },
+            { label: "Quick Start", slug: "getting-started/quick-start" },
           ],
         },
         {
-          label: "Guides",
-          items: [{ label: "Example Guide", slug: "guides/example" }],
+          label: "Usage Guide",
+          items: [
+            { label: "Dashboard", slug: "usage/dashboard" },
+            {
+              label: "Offers",
+              autogenerate: { directory: "usage/offers" },
+            },
+            {
+              label: "Settings",
+              autogenerate: { directory: "usage/settings" },
+            },
+            { label: "Help & Diagnostics", slug: "usage/help" },
+          ],
         },
         {
-          label: "Resources",
-          items: [{ label: "Starlight Docs", slug: "resources/official-docs" }],
+          label: "Storefront",
+          items: [
+            { label: "Overview", slug: "storefront/overview" },
+            { label: "How Offers Render", slug: "storefront/rendering" },
+            { label: "Customer Journey", slug: "storefront/customer-journey" },
+            { label: "Placement Locations", slug: "storefront/placements" },
+            { label: "Cart Interactions", slug: "storefront/cart" },
+            { label: "Checkout Bumps", slug: "storefront/checkout" },
+            { label: "Acceptance & Dismissal", slug: "storefront/acceptance" },
+            { label: "Mobile Responsiveness", slug: "storefront/mobile" },
+            { label: "Performance Profile", slug: "storefront/performance" },
+          ],
+        },
+        {
+          label: "Developer Docs",
+          items: [
+            { label: "Architecture Overview", slug: "developer/architecture" },
+            { label: "Data & Storage Schema", slug: "developer/data-and-storage" },
+            { label: "REST API Reference", slug: "developer/rest-api" },
+            { label: "Hooks & Filters", slug: "developer/hooks-and-filters" },
+            { label: "Background Jobs", slug: "developer/background-jobs" },
+            { label: "Build Tooling", slug: "developer/build-process" },
+            { label: "Development Env", slug: "developer/development-environment" },
+            { label: "Testing & QA", slug: "developer/testing-and-qa" },
+            { label: "Troubleshooting Guide", slug: "developer/troubleshooting" },
+            { label: "Release Process", slug: "developer/release-process" },
+          ],
+        },
+        {
+          label: "AI Agents",
+          items: [
+            { label: "Overview & Access", slug: "agents/overview" },
+            { label: "Development Workflows", slug: "agents/workflows" },
+            { label: "Safety Rules & Guardrails", slug: "agents/safety-rules" },
+          ],
         },
         {
           label: "Others",
           items: [
             { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
+            { label: "Frequently Asked Questions", slug: "others/faq" },
           ],
         },
       ],
