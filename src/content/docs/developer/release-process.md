@@ -10,8 +10,3 @@ description: Versioning, POT regeneration, and WooCommerce Marketplace submissio
 3. Update version numbers in `upsellbay.php` and `readme.txt`.
 4. Package the plugin ZIP archive: `zip -r upsellbay.zip .`.
 5. Upload to WooCommerce Marketplace / QIT validation channels.
-
-## Related Topics
-
-- [Testing & QA](../testing-and-qa)
-- [Architecture Overview](../architecture)

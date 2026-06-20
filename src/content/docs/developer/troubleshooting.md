@@ -12,8 +12,3 @@ description: System diagnostics, logging file paths, and known issue solutions.
 ## Log Files
 
 Logs are written under `wp-content/uploads/wc-logs/upsellbay-*.log`.
-
-## Related Topics
-
-- [Help & Diagnostics](../../usage/help)
-- [Testing & QA](../testing-and-qa)

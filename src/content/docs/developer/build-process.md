@@ -19,8 +19,3 @@ bun run build
 # Rebuild POT localization template
 bun run i18n:make-pot
 ```
-
-## Related Topics
-
-- [Development Environment](../development-environment)
-- [Testing & QA](../testing-and-qa)

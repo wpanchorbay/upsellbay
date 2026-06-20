@@ -19,8 +19,3 @@ composer phpcs
 composer phpstan
 composer test
 ```
-
-## Related Topics
-
-- [Build Process](../build-process)
-- [Release Process](../release-process)
