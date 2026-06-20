@@ -5,13 +5,13 @@ import { ASSET_LINKS } from '../lib/links';
 
 <a href={siteTitleHref} class="site-title sl-flex">
 	<img
-		src={ASSET_LINKS.icon}
-		alt="License Server"
-		class="license-navbar-logo"
-		width="42"
+		src={ASSET_LINKS.logo}
+		alt="UpsellBay"
+		class="upsellbay-navbar-logo"
 		height="42"
 	/>
-	<span translate="no">{siteTitle}</span>
+	<span class="sr-only" translate="no">{siteTitle}</span>
+	<span class="docs-badge">Docs</span>
 </a>
 
 <style>
@@ -32,16 +32,41 @@ import { ASSET_LINKS } from '../lib/links';
 			text-decoration: none;
 		}
 
-		.site-title span:last-child {
-			overflow: hidden;
-		}
-
-		.license-navbar-logo {
+		.upsellbay-navbar-logo {
 			display: block;
 			flex: 0 0 auto;
-			width: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
 			height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
+			width: auto;
+			max-width: 180px;
 			object-fit: contain;
+		}
+
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border: 0;
+		}
+
+		.docs-badge {
+			display: inline-block;
+			padding: 0.18rem 0.45rem;
+			font-size: 0.7rem;
+			font-weight: 600;
+			line-height: 1;
+			border-radius: 0.25rem;
+			background-color: var(--sl-color-bg-accent);
+			color: var(--sl-color-text-accent);
+			border: 1px solid var(--sl-color-border-accent);
+			margin-left: 0.5rem;
+			vertical-align: middle;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
 		}
 	}
 </style>

@@ -1,6 +1,6 @@
 ---
-title: Welcome to Documentation Boilerplate
-description: A starting point for creating beautiful documentation using Astro Starlight.
+title: Welcome to UpsellBay
+description: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
 template: splash
 prev: false
 next: false
@@ -10,7 +10,7 @@ head:
   - tag: meta
     attrs:
       property: og:url
-      content: https://docs.wpanchorbay.com/docs-boilerplate-starlight/
+      content: https://docs.wpanchorbay.com/upsellbay/
   - tag: meta
     attrs:
       property: og:type
@@ -18,20 +18,20 @@ head:
   - tag: meta
     attrs:
       property: og:title
-      content: Welcome to Documentation Boilerplate
+      content: UpsellBay Documentation
   - tag: meta
     attrs:
       property: og:description
-      content: A starting point for creating beautiful documentation using Astro Starlight.
+      content: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
   # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
   - tag: meta
     attrs:
       property: og:image
-      content: https://docs.wpanchorbay.com/docs-boilerplate-starlight/assets/WPAnchorBay-Documentation-OG.png
+      content: https://docs.wpanchorbay.com/upsellbay/assets/WPAnchorBay-Documentation-OG.png
   - tag: meta
     attrs:
       property: og:image:alt
-      content: Documentation Boilerplate – WPAnchorBay
+      content: UpsellBay Documentation – WPAnchorBay
   - tag: meta
     attrs:
       property: og:image:width
@@ -48,36 +48,31 @@ head:
   - tag: meta
     attrs:
       name: twitter:title
-      content: Welcome to Documentation Boilerplate
+      content: UpsellBay Documentation
   - tag: meta
     attrs:
       name: twitter:description
-      content: A starting point for creating beautiful documentation using Astro Starlight.
+      content: Increase WooCommerce average order value with native order bumps and journey-integrated offers.
   # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
   - tag: meta
     attrs:
       name: twitter:image
-      content: https://docs.wpanchorbay.com/docs-boilerplate-starlight/assets/WPAnchorBay-Documentation-OG.png
+      content: https://docs.wpanchorbay.com/upsellbay/assets/WPAnchorBay-Documentation-OG.png
   - tag: meta
     attrs:
       name: twitter:image:alt
-      content: Documentation Boilerplate – WPAnchorBay
+      content: UpsellBay Documentation – WPAnchorBay
 hero:
-  tagline: Kickstart your technical documentation with custom components, dark mode optimizations, and Github Pages deployment built-in.
+  tagline: Increase WooCommerce average order value with native order bumps and offers that work on the merchant's existing checkout without funnel-builder lock-in.
   image:
-    alt: Documentation Boilerplate (wpanchorbay Logo)
-    file: ~/assets/wpanchorbay-icon.png
+    alt: UpsellBay Icon
+    file: ~/assets/iocn_upsellbay.svg
   actions:
     - text: Get Started
-      # PAGE_LINKS.installation — cannot use JS expressions in YAML frontmatter
-      link: /docs-boilerplate-starlight/getting-started/installation/
+      # PAGE_LINKS.introduction — cannot use JS expressions in YAML frontmatter
+      link: /upsellbay/getting-started/introduction/
       icon: right-arrow
       variant: primary
-    - text: View GitHub Template
-      # EXTERNAL_LINKS.githubRepo — cannot use JS expressions in YAML frontmatter
-      link: https://github.com/wpanchorbay/docs-boilerplate-starlight
-      icon: external
-      variant: minimal
 ---
 
 import { CardGrid } from '@astrojs/starlight/components';
@@ -85,17 +80,17 @@ import Card from '../../components/starlight/Card.astro';
 import WPAnchorBayFooter from '../../components/WPAnchorBayFooter.astro';
 
 <CardGrid stagger>
-	<Card title="Pre-configured Styles" icon="pencil">
-		Comes with customized typography, dark mode specific overrides, and a rich aesthetic tailored for professional documentation.
+	<Card title="Quick Start Guide" icon="rocket" href="/upsellbay/getting-started/quick-start/">
+		Configure and deploy your first WooCommerce checkout order bump in under 15 minutes.
 	</Card>
-	<Card title="GitHub Pages Ready" icon="rocket">
-		Includes a reliable GitHub Actions workflow that builds your documentation using PNPM and automatically deploys to GitHub Pages.
+	<Card title="Manage Offers" icon="pencil" href="/upsellbay/usage/offers/01-overview/">
+		Explore offer priorities, statuses, targeting rule groups, and impression analytics.
 	</Card>
-	<Card title="Custom Components" icon="setting">
-		Override Starlight defaults out of the box. Includes modified SiteTitle, ThemeProvider, and social icon configurations.
+	<Card title="Storefront Placements" icon="setting" href="/upsellbay/storefront/placements/">
+		Understand checkout bumps, product page templates, and cart layouts hooks.
 	</Card>
-	<Card title="SEO & Performance" icon="open-book">
-		Fully leverages Astro's static site generation and includes optimized meta tags, sitemaps, and robots.txt.
+	<Card title="Developer Reference" icon="open-book" href="/upsellbay/developer/architecture/">
+		Inspect namespaces, service containers, custom tables schema, and extension points.
 	</Card>
 </CardGrid>
 
