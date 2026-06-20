@@ -1,22 +1,27 @@
 ---
 title: Offer Analytics
-description: Track impressions, acceptances, dismissals, and attributed revenue.
+description: Review offer-level performance data, aggregate dashboard metrics, and what the numbers mean.
 ---
 
-## Performance Metrics Capture
+## Where Analytics Appear
 
-UpsellBay writes basic stats occurrences without storing user session details:
+UpsellBay surfaces analytics in two main places:
 
-- **Views (Impressions):** Logged when an offer UI renders.
-- **Accepts:** Logged when the checkbox is selected or CTA clicked.
-- **Dismissals:** Logged if the buyer explicitly removes or closes the block.
-- **Revenue Attributed:** Value of the product added via the offer layout.
+- The Dashboard for aggregate date-range reporting
+- The individual offer editor under the read-only performance summary
 
-## Database Reporting
+## Metrics Captured
 
-Updates are staged locally and reconciled daily to the daily stats table (`upsellbay_offer_stats_daily`).
+- views
+- accepts
+- dismissals
+- revenue
+- discount total
+- orders
+- accept rate
 
-## Related Topics
+## How To Read The Data
 
-- [Dashboard Overview](../../usage/dashboard)
-- [Data & Storage Schema](../../developer/data-and-storage)
+- High views + low accepts often points to weak fit, weak copy, or weak placement
+- Low views can mean the rules are too strict or the placement is disabled
+- Strong accept rate with low total revenue can still be a win for a low-traffic placement

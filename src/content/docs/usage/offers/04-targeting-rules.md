@@ -1,21 +1,57 @@
 ---
 title: Targeting Rules
-description: Build AND/OR rules to target eligible shopper carts.
+description: Learn every supported targeting rule in UpsellBay and how rule matching changes eligibility.
 ---
 
-## Rules Configuration
+## How Rules Work
 
-Apply rules to restrict offer eligibility to specific shopper states.
+Rules are evaluated against the current product, cart, and shopper context.
 
-### Supported Conditions
+## Rule Matching Modes
 
-- **Cart Value:** Target orders exceeding or falling below a subtotal threshold.
-- **Specific Products:** Target when certain products are in the cart.
-- **Product Category:** Target by categories/tags.
-- **Shopper Details:** Target specific roles or guest vs registered accounts.
-- **Purchase History:** Target users with specific historical order counts or lifetime spends.
+### All rules
 
-## Related Topics
+Every rule must match.
 
-- [Display Conditions](../06-display-conditions)
-- [Offer Triggers](../05-triggers)
+### Any rule
+
+A single matching rule is enough.
+
+## Supported Rule Types
+
+- `cart_product`
+- `cart_category`
+- `cart_tag`
+- `cart_subtotal`
+- `viewed_product`
+- `user_role`
+- `customer_order_count`
+- `customer_lifetime_spend`
+- `stock_status`
+- `exclude_if_product_in_cart`
+
+## Supported Operators
+
+For numeric rules:
+
+- `eq`
+- `neq`
+- `gt`
+- `gte`
+- `lt`
+- `lte`
+
+For list and relationship rules:
+
+- `eq`
+- `neq`
+- `in`
+- `not_in`
+- `contains`
+
+## Validation Notes
+
+- Numeric rules require numeric values
+- Unsupported operators are rejected
+- Unsupported stock states are rejected
+- Empty rule values are rejected for active offers

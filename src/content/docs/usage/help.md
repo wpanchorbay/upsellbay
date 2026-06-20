@@ -1,18 +1,48 @@
 ---
 title: Help & Diagnostics
-description: Diagnose layout issues, plugin conflicts, and offer eligibility blocks.
+description: Use the Help page, Tools page, diagnostics, import validation, and logs for support and operations.
 ---
 
-## Diagnostics Utility
+## Help Page
 
-The Diagnostics page checks your platform context for common faults:
+The **Help** tab is a lightweight routing page. It exists to quickly direct merchants to the most useful references:
 
-- **PHP/Woo Version Checks:** Confirms compatibility with core baselines.
-- **Scheduler Heartbeat:** Verifies that Action Scheduler tasks are running.
-- **License Status:** Checks caching and activation validity.
-- **Conflict Logs:** Inspects conflicts with other active plugins.
+- setup guide
+- first offer tutorial
+- compatibility guide
+- data retention guide
+- developer docs
+- UpsellBay support
 
-## Related Topics
+### Import offers
 
-- [Troubleshooting Guide](../../developer/troubleshooting)
-- [General Settings](../settings/01-general)
+The Tools page includes a JSON import area for validating offer exports before you attempt a migration or manual import workflow.
+
+## Logs
+
+The **Settings -> Logs** section is where you inspect operational records.
+
+### What logs contain
+
+- system events
+- API activity
+- error details
+- related request and response metadata when available
+
+### Common actions
+
+- search log entries
+- open a full log detail view
+- delete a single log entry
+- bulk delete selected log entries
+- copy a support-ready log report to the clipboard
+
+## Screenshot Placeholders
+
+![Placeholder screenshot for Help links](/upsellbay/assets/screenshots/example-screenshot.png)
+
+Replace with: the Help page link table.
+
+![Placeholder screenshot for Tools and Logs](/upsellbay/assets/screenshots/example-screenshot.png)
+
+Replace with: the Tools page diagnostics and the Logs table.

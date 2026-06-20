@@ -1,22 +1,91 @@
 ---
-title: Offer Management
-description: Manage, prioritize, and monitor the performance of all UpsellBay offers.
+title: Offers Overview
+description: Understand the Offers screen, list table controls, and the lifecycle of an UpsellBay offer.
 ---
 
-## Offer List Table
+## What The Offers Screen Does
 
-The core offers interface displays a list table of created offers.
+The **Offers** tab is the operational center for live merchandising. It lets you:
 
-### Column Overview
+- create offers
+- search and filter existing offers
+- check placement and health at a glance
+- open the add/edit screen
+- preview supported storefront locations
+- delete offers
 
-- **Offer Title:** Custom identifier for the offer.
-- **Placement:** The location hook where the offer renders (Product, Cart, Checkout, Thank-You).
-- **Incentive:** The product and discount type.
-- **Priority:** Higher priority values take precedence when multiple offers target the same context.
-- **Status:** Toggles indicating if the offer is Active, Draft, or Paused.
-- **Accept Rate:** Performance summary from current impressions.
+## Offers Table Columns
 
-## Related Topics
+### Offer
 
-- [Creating an Offer](../02-create)
-- [Offer Placements and Types](../03-types)
+The internal title of the offer. Row actions appear here:
+
+- `Edit`
+- `View Live`
+- `Delete`
+
+### Placement
+
+Shows which storefront location the offer belongs to.
+
+### Status
+
+The current workflow state:
+
+- `Draft`
+- `Active`
+- `Paused`
+
+### Health
+
+Health is a conflict indicator, not a guarantee of perfect UX.
+
+- A green success icon means no conflict warning was detected.
+- A warning icon means UpsellBay detected placement crowding, a priority tie, or likely funnel overlap.
+
+### Priority
+
+Lower numbers win when multiple eligible offers compete for the same placement.
+
+### Views / Accepts / Revenue
+
+These are offer-level summary values pulled into the table so you can quickly compare performance.
+
+## Filters and Search
+
+The table supports:
+
+- search by visible row content
+- placement filter
+- status filter
+- health filter
+- sortable columns such as title, status, priority, views, accepts, and revenue
+
+## Offer Lifecycle
+
+### Draft
+
+Use Draft while you are still configuring copy, rules, or discount logic.
+
+### Active
+
+Active offers are eligible to render for shoppers when the placement, rules, and product state all allow it.
+
+### Paused
+
+Paused offers keep their configuration but stop rendering.
+
+## Preview Behavior
+
+`View Live` uses placement-aware preview logic:
+
+- Product offer: links to the offered product page
+- Cart offer: links to the cart page
+- Checkout bump: links to checkout
+- Thank-you offer: uses the most recent qualifying WooCommerce order when available
+
+## Screenshot Placeholder
+
+![Placeholder screenshot for the Offers list table](/upsellbay/assets/screenshots/example-screenshot.png)
+
+Replace with: the Offers tab showing filters, columns, and row actions.

@@ -1,18 +1,46 @@
 ---
-title: Display Conditions
-description: Configure inventory, user role, and discount eligibility settings.
+title: Display Settings, Schedule & Conflicts
+description: Configure how an offer renders, when it runs, and how it behaves around conflicts.
 ---
 
-## Runtime Eligibility Guards
+## Show Product Image
 
-Offers are filtered out automatically if they fail these conditions:
+This toggle controls whether the storefront offer includes the WooCommerce product image when one is available.
 
-- **Stock Level:** Out of stock products do not render.
-- **Duplicate Detection:** Exclude if the offered product is already present in the shopper's cart.
-- **License Limitations:** Offers are disabled if the license is invalid (unless fail-open settings apply).
-- **Priority Gating:** Only show higher priority items to prevent UI clutter.
+## Display Position
 
-## Related Topics
+UpsellBay validates the saved position against the offer type. Each offer type maps to one expected area:
 
-- [Placement Locations](../../storefront/placements)
-- [Display Settings](../../usage/settings/02-display)
+- Checkout bump -> checkout area before submission
+- Product page offer -> after the add-to-cart form
+- Cart offer -> cart offer area
+- Thank-you offer -> thank-you follow-on area
+
+## Schedule
+
+### Start date
+
+Leave blank if the offer should be eligible immediately.
+
+### End date
+
+Leave blank if the offer should stay available until you pause, edit, or delete it.
+
+## Priority
+
+Priority decides which offer wins when multiple active offers qualify for the same placement.
+
+- Lower number = stronger priority
+- Higher number = fallback behavior
+
+## Conflict Detection
+
+UpsellBay checks active offers for:
+
+- placement crowding
+- priority ties
+- likely funnel overlap
+
+### Conflict override
+
+This bypasses conflict prevention and should be used only when the overlap is intentional and documented.
