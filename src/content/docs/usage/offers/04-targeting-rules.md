@@ -9,6 +9,12 @@ Rules are evaluated against the current product, cart, and shopper context.
 
 ## Rule Matching Modes
 
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--targeting-rules.png"
+  alt="UpsellBay Create Offer - Targeting Rules Section"
+  data-lightbox="true"
+/>
+
 ### All rules
 
 Every rule must match.
@@ -44,10 +50,8 @@ For numeric rules:
 For list and relationship rules:
 
 - `eq`
-- `neq`
-- `in`
-- `not_in`
 - `contains`
+- `not_in`
 
 ## Validation Notes
 
