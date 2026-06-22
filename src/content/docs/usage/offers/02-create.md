@@ -9,7 +9,6 @@ The Add/Edit Offer screen is organized into sections:
 
 - Required basics
 - Targeting rules
-- Recommendations
 - Discount
 - Display settings
 - Schedule and priority
@@ -17,13 +16,15 @@ The Add/Edit Offer screen is organized into sections:
 
 This page explains every field in the order merchants see it.
 
-## Screenshot Placeholder
-
-![Placeholder screenshot for the Add Offer page](/upsellbay/assets/screenshots/example-screenshot.png)
-
 Replace with: the full Add Offer screen with all sections expanded.
 
 ## Required Basics
+
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--required-basics.png"
+  alt="UpsellBay Create Offer - Required Basics Section"
+  data-lightbox="true"
+/>
 
 ### Offer name
 
@@ -73,6 +74,10 @@ Important behaviors:
 
 A short supporting label such as `Recommended`, `Exclusive`, or `Most Popular`.
 
+### Section heading
+
+Controls the heading shown above the cart offer list in block and classic checkout. Leave blank to use the default Recommended for you.
+
 ### Headline
 
 Primary shopper-facing message. Required for live offers.
@@ -87,6 +92,12 @@ The call to action shoppers click. Required for live offers.
 
 ## Targeting Rules
 
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--targeting-rules.png"
+  alt="UpsellBay Create Offer - Targeting Rules Section"
+  data-lightbox="true"
+/>
+
 ### Rule matching
 
 Controls how multiple rules work together:
@@ -100,13 +111,13 @@ Rules are edited through the visual builder and stored as structured JSON.
 
 Full rule types are documented in [Targeting Rules](./04-targeting-rules/).
 
-## Recommendations
-
-### Assistant suggestions
-
-This panel is meant to help with recommendation ideas after a primary product context exists. It is guidance, not a required field.
-
 ## Discount
+
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--discount.png"
+  alt="UpsellBay Create Offer - Discount Section"
+  data-lightbox="true"
+/>
 
 ### Discount type
 
@@ -124,6 +135,12 @@ Discount math is calculated server-side. Percentage discounts cannot exceed 100.
 The numeric input used by the selected discount type.
 
 ## Display Settings
+
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--display-settings.png"
+  alt="UpsellBay Create Offer - Display Settings"
+  data-lightbox="true"
+/>
 
 ### Show product image
 
@@ -144,6 +161,12 @@ Advanced users can preserve extra placement keys here.
 
 ## Schedule and Priority
 
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--schedule-and-priority.png"
+  alt="UpsellBay Create Offer - Schedule and Priority Settings"
+  data-lightbox="true"
+/>
+
 ### Start date
 
 Optional start timestamp.
@@ -157,6 +180,12 @@ Optional end timestamp. End date must be after start date.
 Lower numbers win when multiple eligible offers compete for the same placement.
 
 ## Advanced Metadata
+
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--advanced-metadata.png"
+  alt="UpsellBay Create Offer - Advanced Metadata Settings"
+  data-lightbox="true"
+/>
 
 ### Performance
 
