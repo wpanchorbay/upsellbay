@@ -121,14 +121,10 @@ export default defineConfig({
           label: "Storefront",
           items: [
             { label: "Overview", slug: "storefront/overview" },
-            { label: "How Offers Render", slug: "storefront/rendering" },
-            { label: "Customer Journey", slug: "storefront/customer-journey" },
-            { label: "Placement Locations", slug: "storefront/placements" },
-            { label: "Cart Interactions", slug: "storefront/cart" },
-            { label: "Checkout Bumps", slug: "storefront/checkout" },
-            { label: "Acceptance & Dismissal", slug: "storefront/acceptance" },
-            { label: "Mobile Responsiveness", slug: "storefront/mobile" },
-            { label: "Performance Profile", slug: "storefront/performance" },
+            { label: "Product Page Offers", slug: "storefront/product-page-offer" },
+            { label: "Cart Offers", slug: "storefront/cart-offer" },
+            { label: "Checkout Bumps", slug: "storefront/checkout-bump" },
+            { label: "Thank-You Offers", slug: "storefront/thank-you-offer" },
           ],
         },
         {
