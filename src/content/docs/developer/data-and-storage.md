@@ -41,6 +41,7 @@ Core fields external integrations usually care about:
 | `_ub_rules` | Normalized eligibility rules |
 | `_ub_rules_match` | `all` or `any` rule logic |
 | `_ub_placement_config` | Placement-specific configuration |
+| `_ub_hide_if_in_cart` | Whether to hide the offer if the product is already in cart |
 | `_ub_priority` | Lower numbers render first |
 
 ### Settings

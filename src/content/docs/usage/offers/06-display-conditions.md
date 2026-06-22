@@ -7,6 +7,10 @@ description: Configure how an offer renders, when it runs, and how it behaves ar
 
 This toggle controls whether the storefront offer includes the WooCommerce product image when one is available.
 
+## Hide If In Cart
+
+This toggle allows the offer to be hidden if the customer already has the offered product in their cart. For generic cross-sells, this avoids showing duplicates. However, you can uncheck this if you are offering add-ons or selling additional quantities at a discount where having the product in the cart is expected.
+
 ## Display Position
 
 UpsellBay validates the saved position against the offer type. Each offer type maps to one expected area:
