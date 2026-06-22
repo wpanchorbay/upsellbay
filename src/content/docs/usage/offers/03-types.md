@@ -5,6 +5,12 @@ description: Choose the right offer type and goal for each stage of the WooComme
 
 ## Placement-Based Offer Types
 
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-offer-types.png"
+  alt="UpsellBay Offer Types"
+  data-lightbox="true"
+/>
+
 ### Checkout bump
 
 Shown near checkout before the final order submission area. Best for low-friction accessories and add-ons.

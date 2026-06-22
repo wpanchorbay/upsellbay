@@ -10,7 +10,7 @@ Rules are evaluated against the current product, cart, and shopper context.
 ## Rule Matching Modes
 
 <img
-  src="/upsellbay/assets/screenshots/offers/upsellbay-add-offer--targeting-rules.png"
+  src="/upsellbay/assets/screenshots/offers/upsellbay-offer-rules.png"
   alt="UpsellBay Create Offer - Targeting Rules Section"
   data-lightbox="true"
 />

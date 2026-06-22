@@ -5,6 +5,12 @@ description: Understand the Offers screen, list table controls, and the lifecycl
 
 ## What The Offers Screen Does
 
+<img
+  src="/upsellbay/assets/screenshots/offers/upsellbay-offers-overview.png"
+  alt="UpsellBay Offers Overview"
+  data-lightbox="true"
+/>
+
 The **Offers** tab is the operational center for live merchandising. It lets you:
 
 - create offers
@@ -84,8 +90,3 @@ Paused offers keep their configuration but stop rendering.
 - Checkout bump: links to checkout
 - Thank-you offer: uses the most recent qualifying WooCommerce order when available
 
-## Screenshot Placeholder
-
-![Placeholder screenshot for the Offers list table](/upsellbay/assets/screenshots/example-screenshot.png)
-
-Replace with: the Offers tab showing filters, columns, and row actions.
