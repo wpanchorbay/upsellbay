@@ -195,6 +195,12 @@ Available options:
 
 ### Use theme buttons
 
+<img
+  src="/upsellbay/assets/screenshots/upsellbay-theme-order-button.png"
+  alt="UpsellBay - Use theme buttons style"
+  data-lightbox="true"
+/>
+
 What it means:
 
 - offer buttons inherit the storefront's normal button style
@@ -206,6 +212,12 @@ When to use it:
 - when you do not want offers to visually compete with the rest of the page
 
 ### Outline
+
+<img
+  src="/upsellbay/assets/screenshots/upsellbay-outlined-order-button.png"
+  alt="UpsellBay - Outline order buttons style"
+  data-lightbox="true"
+/>
 
 What it means:
 
