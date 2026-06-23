@@ -3,6 +3,12 @@ title: Product Page Offer
 description: Maximize early touchpoints with companion product recommendations and frequently bought together offers.
 ---
 
+<img
+  src="/upsellbay/assets/screenshots/storefront/upsellbay-storefront-product-page-offer.png"
+  alt="UpsellBay Storefront Product Page Offer"
+  data-lightbox="true"
+/>
+
 ## What is a Product Page Offer?
 
 A Product Page Offer is an upsell or cross-sell presented directly on the single product page, typically just below the "Add to Cart" form. It encourages the customer to bundle additional, related items with the main product before they even reach the cart.
