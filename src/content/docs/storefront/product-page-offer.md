@@ -14,6 +14,7 @@ These offers often look like "Frequently Bought Together" bundles or simple chec
 1. **Contextual Evaluation:** When a customer views a product page, UpsellBay checks if there are any active offers specifically targeted at that product or category.
 2. **Native Placement:** The offer is seamlessly injected near the native WooCommerce add-to-cart form, feeling like a built-in feature of your theme.
 3. **Bundled Action:** Customers can select the add-on. When they click the main "Add to Cart" button, both the primary product and the selected offer are added to the cart simultaneously.
+4. **Smart Redundancy Prevention:** UpsellBay automatically prevents an offer from showing on its own product page. You don't need to configure complex exclusion rules to prevent a product from offering itself!
 
 ## The Sales Psychology
 
