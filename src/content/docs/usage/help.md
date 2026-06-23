@@ -5,14 +5,21 @@ description: Use the Help page, Tools page, diagnostics, import validation, and 
 
 ## Help Page
 
-The **Help** tab is a lightweight routing page. It exists to quickly direct merchants to the most useful references:
+The **Help** tab within the UpsellBay plugin (`WooCommerce -> UpsellBay -> Help`) is a lightweight routing page designed to quickly direct merchants to the most useful references and support channels. It features a clean, card-based layout:
 
-- setup guide
-- first offer tutorial
-- compatibility guide
-- data retention guide
-- developer docs
-- UpsellBay support
+### 1. Documentation Card
+Provides a quick link to the official documentation site. It includes helpful prompts (such as pointing to the first-offer tutorial) to guide new users, and a direct button to **View Full Documentation**.
+
+### 2. Contact Support Card
+Provides direct access to our support team:
+- **Visit Support Portal:** A button linking to the official support portal (`https://wpanchorbay.com/support/`).
+- **Direct Email:** Provides the support email address (`support@wpanchorbay.com`) for merchants who prefer to email directly.
+
+### 3. Logs & Diagnostics Card
+Offers one-click access to system logs for troubleshooting issues or reviewing plugin activity. It includes direct links to:
+- **UpsellBay Logs:** The plugin's internal event logs.
+- **WooCommerce Logs:** Native WooCommerce status and error logs.
+- **WordPress Site Health & Logs:** The native WordPress diagnostics tools.
 
 
 ## Logs
@@ -33,13 +40,3 @@ The **Settings -> Logs** section is where you inspect operational records.
 - delete a single log entry
 - bulk delete selected log entries
 - copy a support-ready log report to the clipboard
-
-## Screenshot Placeholders
-
-![Placeholder screenshot for Help links](/upsellbay/assets/screenshots/example-screenshot.png)
-
-Replace with: the Help page link table.
-
-![Placeholder screenshot for Tools and Logs](/upsellbay/assets/screenshots/example-screenshot.png)
-
-Replace with: the Tools page diagnostics and the Logs table.
