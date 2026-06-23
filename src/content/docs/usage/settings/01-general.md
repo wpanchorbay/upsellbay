@@ -173,6 +173,8 @@ What it affects:
 - visual accents on offers
 - highlights that help the offer feel branded without replacing your theme layout
 
+**Legibility & Contrast:** UpsellBay automatically calculates a contrasting text color (either white or dark gray) for elements rendered on top of the accent color background based on its relative luminance. This ensures that text on buttons, badges, and tag elements remains readable regardless of whether you choose a light or dark accent color.
+
 When to use it:
 
 - when the default accent does not fit the storefront
@@ -222,6 +224,7 @@ When to use it:
 What it means:
 
 - offer buttons render with a lighter outline treatment
+- by default, outline button text uses the storefront's standard text color instead of the accent color to maintain legibility. On hover, the button fills with the accent color and changes the text color to the dynamically calculated contrasting color.
 
 When to use it:
 
