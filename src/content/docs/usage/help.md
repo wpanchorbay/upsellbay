@@ -14,9 +14,6 @@ The **Help** tab is a lightweight routing page. It exists to quickly direct merc
 - developer docs
 - UpsellBay support
 
-### Import offers
-
-The Tools page includes a JSON import area for validating offer exports before you attempt a migration or manual import workflow.
 
 ## Logs
 

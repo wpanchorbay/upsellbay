@@ -114,6 +114,7 @@ export default defineConfig({
               label: "Settings",
               autogenerate: { directory: "usage/settings" },
             },
+            { label: "Tools", slug: "usage/tools" },
             { label: "Help & Diagnostics", slug: "usage/help" },
           ],
         },
