@@ -3,6 +3,12 @@ title: Thank-You Follow-on Offer
 description: Capitalize on post-purchase euphoria with exclusive, limited-time follow-on offers.
 ---
 
+<img
+  src="/upsellbay/assets/screenshots/storefront/upsellbay-storefront-thank-you.png"
+  alt="UpsellBay Storefront Thank You Page"
+  data-lightbox="true"
+/>
+
 ## What is a Thank-You Offer?
 
 A Thank-You Follow-on Offer is presented on the WooCommerce "Order Received" (Thank You) page, immediately after a customer completes their primary purchase. 

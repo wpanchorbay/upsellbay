@@ -3,6 +3,12 @@ title: Cart Offer
 description: Use cart page real estate to cross-sell products and help customers reach incentive thresholds.
 ---
 
+<img
+  src="/upsellbay/assets/screenshots/storefront/upsellbay-storefront-cart.png"
+  alt="UpsellBay Storefront Cart Page"
+  data-lightbox="true"
+/>
+
 ## What is a Cart Offer?
 
 A Cart Offer is displayed on the main shopping cart page, typically just below the cart items table or near the cart totals. At this stage, the customer is reviewing their intended purchases before proceeding to checkout.

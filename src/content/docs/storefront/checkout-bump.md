@@ -3,6 +3,12 @@ title: Checkout Bump
 description: Learn how to effectively use checkout order bumps to increase your average order value.
 ---
 
+<img
+  src="/upsellbay/assets/screenshots/storefront/upsellbay-storefront-checkout.png"
+  alt="UpsellBay Storefront Checkout Page"
+  data-lightbox="true"
+/>
+
 ## What is a Checkout Bump?
 
 A Checkout Bump is a low-friction, impulse-buy offer presented directly on the checkout page, usually right before the "Place Order" button. It consists of a simple checkbox, a compelling headline, and a short description. 
