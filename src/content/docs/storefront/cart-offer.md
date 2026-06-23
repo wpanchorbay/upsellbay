@@ -21,6 +21,55 @@ This is the perfect place to present cross-sells or to encourage the customer to
 2. **Threshold Logic:** If an offer is configured to trigger based on a cart subtotal (e.g., "Spend $50, get 10% off Product X"), the offer dynamically appears or disappears as the cart total fluctuates.
 3. **Seamless AJAX Updates:** Accepting the offer adds the item via an asynchronous AJAX request. This instantly updates the cart totals without forcing a full page reload, maintaining the customer's momentum and focus.
 
+## How to Create a Cart Offer
+
+Follow these steps to create your first Cart Offer:
+
+### 1. Core Configuration
+
+Go to **WooCommerce > UpsellBay > Offers** and click **Add Offer**.
+
+- **Offer name:** An internal name to identify the offer in your admin.
+- **Offer type:** Select **Cart cross-sell**.
+- **Status:** Set to **Active** (or **Draft** if you want to test it first).
+- **Offer goal:** Select the intent of your offer (e.g., **Cross-sell** or **Threshold Offer**).
+- **Offer product:** Search and select the exact product you want to recommend to shoppers.
+
+### 2. Triggers and Rules
+
+UpsellBay needs to know *when* to show this offer. You can set this up using basic triggers or advanced rules.
+
+- **Trigger product IDs:** Enter comma-separated product IDs. The offer will show if any of these products are in the cart.
+- **Trigger category IDs:** Enter comma-separated category IDs. The offer will show if a product from these categories is in the cart.
+
+For more complex logic, leave triggers empty and use **Rules**:
+- **Rule matching:** Choose whether the customer must meet **All rules** or **Any rule**.
+- **Rules Builder:** Create conditions like cart subtotals, specific user roles, or stock statuses.
+
+### 3. Display and Content
+
+Customize how the offer looks and feels to the shopper:
+
+- **Headline:** The main title of your offer.
+- **Body text:** Optional short description (max 240 characters) shown below the headline.
+- **Button text:** The call-to-action on the button.
+- **Show product image:** Check to display the offered product's thumbnail image.
+- **Hide if in cart:** Check this to automatically hide the offer if the customer has already added the offered product to their cart.
+
+### 4. Pricing and Discounts
+
+Incentivize the customer to take action:
+
+- **Discount type:** Choose between No discount, Percentage, Fixed amount off, or Fixed offer price.
+- **Discount value:** Enter the numeric value. The live preview will automatically show you the updated price based on your selection.
+
+### 5. Finalizing
+
+- **Priority:** If multiple offers are eligible, the one with the lower priority number wins.
+- **Start / End date:** Optionally schedule your offer to run during a specific timeframe.
+
+Click **Save offer**. If your status is Active, the cart offer will immediately start showing on the cart page!
+
 ## The Sales Psychology
 
 Cart Offers utilize two proven psychological drivers:

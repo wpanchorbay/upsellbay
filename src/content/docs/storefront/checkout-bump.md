@@ -22,6 +22,55 @@ Because the customer has already decided to purchase and entered their payment i
 3. **Frictionless Addition:** The customer simply checks the box. UpsellBay utilizes an AJAX request to instantly add the product, apply any associated discounts, and recalculate the order total without ever reloading the page.
 4. **Single Transaction:** The customer clicks "Place Order," seamlessly purchasing the original cart contents plus the bump item in a single, unified transaction.
 
+## How to Create a Checkout Bump
+
+Follow these steps to create your first Checkout Bump:
+
+### 1. Core Configuration
+
+Go to **WooCommerce > UpsellBay > Offers** and click **Add Offer**.
+
+- **Offer name:** An internal name to identify the offer in your admin.
+- **Offer type:** Select **Checkout bump**.
+- **Status:** Set to **Active** (or **Draft** if you want to test it first).
+- **Offer goal:** Select the intent of your offer (e.g., **Add-on** for a complementary item).
+- **Offer product:** Search and select the exact product you want to recommend to shoppers.
+
+### 2. Triggers and Rules
+
+UpsellBay needs to know *when* to show this offer. You can set this up using basic triggers or advanced rules.
+
+- **Trigger product IDs:** Enter comma-separated product IDs.
+- **Trigger category IDs:** Enter comma-separated category IDs.
+
+For more complex logic, leave triggers empty and use **Rules**:
+- **Rule matching:** Choose whether the customer must meet **All rules** or **Any rule**.
+- **Rules Builder:** Create conditions like cart subtotals, specific user roles, stock statuses, or customer order counts.
+
+### 3. Display and Content
+
+Customize how the offer looks and feels to the shopper:
+
+- **Headline:** The main title of your offer.
+- **Body text:** Optional short description (max 240 characters) shown below the headline. Keep this punchy for checkout bumps.
+- **Button text:** N/A for standard checkbox checkout bumps, but useful if using alternative layouts.
+- **Show product image:** Check to display the offered product's thumbnail image inside the bump box.
+- **Hide if in cart:** Check this to automatically hide the offer if the customer has already added the offered product to their cart.
+
+### 4. Pricing and Discounts
+
+Incentivize the customer to take action:
+
+- **Discount type:** Choose between No discount, Percentage, Fixed amount off, or Fixed offer price.
+- **Discount value:** Enter the numeric value. The live preview will automatically show you the updated price based on your selection.
+
+### 5. Finalizing
+
+- **Priority:** If multiple checkout bumps are eligible, the one with the lower priority number wins.
+- **Start / End date:** Optionally schedule your offer to run during a specific timeframe.
+
+Click **Save offer**. If your status is Active, the checkout bump will immediately start showing on the checkout page!
+
 ## The Sales Psychology
 
 Checkout bumps operate on the highly effective principles of **Impulse Purchasing** and **Frictionless Buying**:

@@ -21,6 +21,55 @@ Unlike pre-purchase offers, the customer has already crossed the finish line. Th
 2. **Safe Environment:** The offer is rendered exclusively on the final Thank-You page. Because the primary transaction is already securely processed and finalized, there is absolutely zero risk to your initial order revenue.
 3. **Follow-On Checkout:** If the customer accepts the offer, UpsellBay smoothly initiates a separate, expedited follow-on checkout process for this newly added item.
 
+## How to Create a Thank-You Offer
+
+Follow these steps to create your first Thank-You Offer:
+
+### 1. Core Configuration
+
+Go to **WooCommerce > UpsellBay > Offers** and click **Add Offer**.
+
+- **Offer name:** An internal name to identify the offer in your admin.
+- **Offer type:** Select **Thank-you offer**.
+- **Status:** Set to **Active** (or **Draft** if you want to test it first).
+- **Offer goal:** Select the intent of your offer (e.g., **Add-on** or **Exclusive Deal**).
+- **Offer product:** Search and select the exact product you want to recommend to shoppers.
+
+### 2. Triggers and Rules
+
+UpsellBay needs to know *when* to show this offer. You can set this up using basic triggers or advanced rules based on the order that was just placed.
+
+- **Trigger product IDs:** Enter comma-separated product IDs.
+- **Trigger category IDs:** Enter comma-separated category IDs.
+
+For more complex logic, leave triggers empty and use **Rules**:
+- **Rule matching:** Choose whether the customer must meet **All rules** or **Any rule**.
+- **Rules Builder:** Create conditions like order totals, specific user roles, or customer order counts.
+
+### 3. Display and Content
+
+Customize how the offer looks and feels to the shopper:
+
+- **Headline:** The main title of your offer (e.g., "Wait! Add this to your order...").
+- **Body text:** Optional short description (max 240 characters) shown below the headline.
+- **Button text:** The call-to-action on the button (e.g., "Add for $10").
+- **Show product image:** Check to display the offered product's thumbnail image.
+- **Hide if in cart:** N/A for Thank-You offers, as the cart is already empty at this stage.
+
+### 4. Pricing and Discounts
+
+Incentivize the customer to take action:
+
+- **Discount type:** Choose between No discount, Percentage, Fixed amount off, or Fixed offer price.
+- **Discount value:** Enter the numeric value. The live preview will automatically show you the updated price based on your selection.
+
+### 5. Finalizing
+
+- **Priority:** If multiple offers are eligible, the one with the lower priority number wins.
+- **Start / End date:** Optionally schedule your offer to run during a specific timeframe.
+
+Click **Save offer**. If your status is Active, the offer will immediately start showing on the Thank-You page for eligible orders!
+
 ## The Sales Psychology
 
 Thank-You offers are incredibly powerful because they leverage **Post-Purchase Euphoria** and **Commitment & Consistency**:

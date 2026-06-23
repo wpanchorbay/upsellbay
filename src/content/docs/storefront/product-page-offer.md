@@ -75,3 +75,13 @@ Product Page Offers leverage two core psychological principles:
 
 - **Anticipating Needs:** By offering batteries for a flashlight or a memory card for a camera, you solve a future problem immediately, reducing friction.
 - **Perceived Value via Bundling:** Presenting the offer with a targeted discount shifts the customer's mindset from "Should I buy this?" to "Look at the great deal I'm getting."
+
+## What Can Go Wrong
+
+- **Irrelevant Recommendations:** Offering a premium upgrade when the user is looking at a budget option can create cognitive dissonance. Make sure the offer logically matches the original product.
+- **Information Overload:** The product page is already full of details, reviews, and specs. Keep your offer concise so it doesn't overwhelm the buyer or clutter the layout.
+- **Distracting from the Main Product:** If the offer takes too much attention away from the primary "Add to Cart" button, you risk confusing the buyer and losing the initial sale entirely.
+
+## How This Helps Your Business
+
+Product page offers are fantastic for capturing the customer's attention early in their journey. By showcasing complementary items right at the point of initial intent, you can increase your Average Order Value (AOV) before the customer even reaches the cart, effectively expanding the basket size at the very first touchpoint.
