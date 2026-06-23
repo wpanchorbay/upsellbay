@@ -18,15 +18,15 @@ This is the perfect place to present cross-sells or to encourage the customer to
 ## How it Works
 
 1. **Dynamic Recalculation:** As a customer adds, removes, or changes item quantities on the cart page, UpsellBay instantly evaluates the new cart state against your active offer rules.
-2. **Threshold Logic:** If you have an offer configured to trigger based on a cart subtotal (e.g., "Spend $50, get 10% off Product X"), the offer will dynamically appear or disappear as the cart total changes.
-3. **AJAX Updates:** Accepting the offer adds the item via an AJAX request, instantly updating the cart totals without forcing a full page reload, keeping the customer focused.
+2. **Threshold Logic:** If an offer is configured to trigger based on a cart subtotal (e.g., "Spend $50, get 10% off Product X"), the offer dynamically appears or disappears as the cart total fluctuates.
+3. **Seamless AJAX Updates:** Accepting the offer adds the item via an asynchronous AJAX request. This instantly updates the cart totals without forcing a full page reload, maintaining the customer's momentum and focus.
 
 ## The Sales Psychology
 
-Cart Offers utilize **Goal Gradient Effect** and **Logical Pairing**.
+Cart Offers utilize two proven psychological drivers:
 
 - **Goal Gradient Effect:** Humans are highly motivated to complete a goal when they are close to it. If they are $5 away from free shipping, a $10 cart offer feels like a smart financial decision rather than an extra expense.
-- **Logical Pairing:** The customer is currently reviewing everything they've selected. This is the moment they realize they forgot something ("I bought the shoes, but I need the socks"). Offering the logical pairing here feels helpful, not pushy.
+- **Logical Pairing:** The customer is currently reviewing their intended purchases. Offering a logical pairing at this exact moment ("I bought the shoes, but I need the socks") feels helpful and additive, not pushy.
 
 ## What Can Go Wrong
 

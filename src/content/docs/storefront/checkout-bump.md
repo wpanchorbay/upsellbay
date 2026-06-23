@@ -17,18 +17,18 @@ Because the customer has already decided to purchase and entered their payment i
 
 ## How it Works
 
-1. **Eligibility Check:** When the customer reaches the checkout page, UpsellBay evaluates your active bump rules (e.g., minimum cart total, specific products in cart).
-2. **Seamless Rendering:** The offer is rendered natively within the WooCommerce checkout flow, matching your theme's styling.
-3. **One-Click Add:** The customer checks the box. UpsellBay uses an AJAX request to instantly add the product, apply any discounts, and recalculate the order total without reloading the page.
-4. **Checkout:** The customer clicks "Place Order," purchasing the original cart contents plus the bump item in a single transaction.
+1. **Eligibility Check:** When the customer reaches the checkout page, UpsellBay instantly evaluates your active bump rules (e.g., minimum cart total, specific products in cart).
+2. **Seamless Rendering:** The offer is rendered natively within the WooCommerce checkout flow, inheriting your active theme's styling and typography so it looks like a built-in feature.
+3. **Frictionless Addition:** The customer simply checks the box. UpsellBay utilizes an AJAX request to instantly add the product, apply any associated discounts, and recalculate the order total without ever reloading the page.
+4. **Single Transaction:** The customer clicks "Place Order," seamlessly purchasing the original cart contents plus the bump item in a single, unified transaction.
 
 ## The Sales Psychology
 
-Checkout bumps operate on the principle of **Impulse Purchasing** and **Frictionless Buying**.
+Checkout bumps operate on the highly effective principles of **Impulse Purchasing** and **Frictionless Buying**:
 
-- **High Intent:** The customer is at the peak of their buying intent. They have their wallet out.
-- **Low Commitment:** Checkout bumps are most effective when they are inexpensive, no-brainer add-ons that don't require further research or decision-making.
-- **The "While I'm At It" Effect:** Framing the offer as an exclusive, one-time convenience ("Add rush processing," "Include a protective case") significantly boosts conversion rates.
+- **High Intent:** The customer is at the absolute peak of their buying intent. They have their wallet out and are ready to finalize.
+- **Low Commitment:** Checkout bumps are most effective when they are inexpensive, "no-brainer" add-ons that require zero additional research or decision-making.
+- **The "While I'm At It" Effect:** Framing the offer as an exclusive, one-time convenience ("Add rush processing," "Include a protective case") significantly boosts conversion rates because it leverages the momentum of the primary purchase.
 
 ## What Can Go Wrong
 

@@ -24,6 +24,6 @@ Use when:
 
 ## Rules vs Trigger IDs
 
-Use the visual rules when non-technical store managers will maintain the offer.
+Use the **visual rules builder** for most setups. The visual rules interface seamlessly supports searching and selecting multiple products, categories, or tags with an infinite-scroll dropdown, making it highly intuitive for non-technical store managers.
 
-Use trigger IDs when you need strict IDs or technical operators manage the setup.
+Use **trigger IDs** primarily when you need to quickly copy-paste large lists of specific IDs, or when technical operators are managing the setup programmatically.

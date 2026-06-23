@@ -29,16 +29,16 @@ Here is the complete list of supported rule types, their expected values, and su
 
 | Rule Type | Description | Value Type | Supported Operators |
 | --- | --- | --- | --- |
-| `cart_product` | Cart contains product | List (Products) | `contains`, `not_in` |
-| `cart_category` | Cart contains category | List (Categories) | `contains` |
-| `cart_tag` | Cart contains tag | List (Tags) | `contains` |
+| `cart_product` | Cart contains product | List (Products - Multi-select) | `contains`, `not_in` |
+| `cart_category` | Cart contains category | List (Categories - Multi-select) | `contains` |
+| `cart_tag` | Cart contains tag | List (Tags - Multi-select) | `contains` |
 | `cart_subtotal` | Cart subtotal is | Number | `gt`, `gte`, `lt`, `lte`, `eq`, `neq` |
-| `viewed_product` | Currently viewing product | List (Products) | `contains` |
-| `user_role` | User role is | List (Roles) | `contains` |
+| `viewed_product` | Currently viewing product | List (Products - Multi-select) | `contains` |
+| `user_role` | User role is | List (Roles - Multi-select) | `contains` |
 | `customer_order_count` | Customer order count is | Number | `gt`, `gte`, `lt`, `lte`, `eq`, `neq` |
 | `customer_lifetime_spend` | Customer lifetime spend is | Number | `gt`, `gte`, `lt`, `lte`, `eq`, `neq` |
 | `stock_status` | Offered product stock status is | Stock Status | `eq` |
-| `exclude_if_product_in_cart` | Exclude if cart contains product | List (Products) | `not_in` |
+| `exclude_if_product_in_cart` | Exclude if cart contains product | List (Products - Multi-select) | `not_in` |
 
 *Note: `lifetime_spend` is accepted as an alias for `customer_lifetime_spend`, and `exclude_product_in_cart` is accepted as an alias for `exclude_if_product_in_cart`.*
 
@@ -62,7 +62,7 @@ The system normalizes operators and accepts various aliases to make API integrat
 ## Validation Notes
 
 - Numeric rules (`cart_subtotal`, `customer_order_count`, `customer_lifetime_spend`) require numeric values.
-- List rules accept single values or arrays of values.
+- List rules accept single values or arrays of values. In the visual builder, Product, Category, Tag, and Role rules utilize a multi-select interface with infinite scrolling to easily manage large datasets.
 - Unsupported operators are rejected.
 - Unsupported stock states are rejected (supported states: `instock`, `outofstock`, `onbackorder`).
 - Empty rule values are rejected for active offers.

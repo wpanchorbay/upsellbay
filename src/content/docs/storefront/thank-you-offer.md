@@ -17,17 +17,17 @@ Unlike pre-purchase offers, the customer has already crossed the finish line. Th
 
 ## How it Works
 
-1. **Post-Purchase Evaluation:** Once the order is placed, UpsellBay evaluates your active Thank-You offers based on the contents of the completed order (e.g., "Customer just bought a coffee machine").
-2. **Safe Environment:** The offer is rendered on the Thank-You page. Because the primary transaction is already securely processed, there is zero risk to your initial revenue.
-3. **Follow-On Checkout:** If the customer accepts the offer, UpsellBay initiates a separate follow-on checkout process for this new item.
+1. **Post-Purchase Evaluation:** Once the primary order is successfully placed, UpsellBay instantly evaluates your active Thank-You offers against the contents of the newly completed order (e.g., checking if the customer just bought a coffee machine).
+2. **Safe Environment:** The offer is rendered exclusively on the final Thank-You page. Because the primary transaction is already securely processed and finalized, there is absolutely zero risk to your initial order revenue.
+3. **Follow-On Checkout:** If the customer accepts the offer, UpsellBay smoothly initiates a separate, expedited follow-on checkout process for this newly added item.
 
 ## The Sales Psychology
 
-Thank-You offers are incredibly powerful because they leverage **Post-Purchase Euphoria** and **Commitment & Consistency**.
+Thank-You offers are incredibly powerful because they leverage **Post-Purchase Euphoria** and **Commitment & Consistency**:
 
-- **Endorphin Rush:** The moment right after a purchase is when a buyer feels the highest level of excitement and dopamine. They are in a "buying mood."
-- **Fear of Missing Out (FOMO):** Presenting this offer as a strict, one-time-only deal (e.g., "Because you just bought X, you can add Y for 40% off right now only") creates urgency that is difficult to ignore.
-- **Zero Friction:** Even though it requires a separate checkout step in the current version of UpsellBay, the customer's intent is so high that the psychological friction is remarkably low.
+- **Endorphin Rush:** The moment right after a purchase is when a buyer feels the highest level of excitement. They are still actively in a "buying mood."
+- **Fear of Missing Out (FOMO):** Presenting this offer as a strict, one-time-only deal (e.g., "Because you just bought X, you can add Y for 40% off right now only") creates compelling urgency that is difficult to ignore.
+- **Zero Friction:** Even though it requires a brief follow-on checkout step, the customer's intent and trust levels are so high that the psychological friction is remarkably low.
 
 ## What Can Go Wrong
 

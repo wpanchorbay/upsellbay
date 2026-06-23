@@ -107,7 +107,9 @@ Controls how multiple rules work together:
 
 ### Rules
 
-Rules are edited through the visual builder and stored as structured JSON.
+Rules are edited through the visual builder and stored as structured JSON. 
+
+When creating rules that target specific products (such as "Cart contains product" or "Viewed product"), you can seamlessly select **multiple products** within a single rule. The dropdown utilizes a native WooCommerce search interface equipped with infinite scrolling, allowing you to easily browse large catalogs. Selected products clearly display their name, ID, and price to ensure accurate targeting.
 
 Full rule types are documented in [Targeting Rules](./04-targeting-rules/).
 
