@@ -5,6 +5,12 @@ description: Use the Help page, Tools page, diagnostics, import validation, and 
 
 ## Help Page
 
+<img
+  src="/upsellbay/assets/screenshots/upsellbay-help-page.png"
+  alt="UpsellBay Offers Overview"
+  data-lightbox="true"
+/>
+
 The **Help** tab within the UpsellBay plugin (`WooCommerce -> UpsellBay -> Help`) is a lightweight routing page designed to quickly direct merchants to the most useful references and support channels. It features a clean, card-based layout:
 
 ### 1. Documentation Card

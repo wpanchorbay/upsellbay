@@ -1,5 +1,5 @@
 ---
-title: Tools (Import & Export)
+title: Tools 
 description: Easily migrate, backup, and restore your UpsellBay offers and global settings.
 ---
 
