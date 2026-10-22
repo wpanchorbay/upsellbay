@@ -28,6 +28,8 @@ Choose the storefront location you want to test first:
 
 This choice also sets the default copy, default offer goal, and default display position behind the scenes.
 
+With only the free plugin active, the wizard offers the checkout bump. The product page, cart, and thank-you placements are added by UpsellBay Pro.
+
 ### Offer product
 
 This is the product shoppers can add from the offer. Use the product search control to find the exact item.
@@ -43,6 +45,14 @@ Choose a product that is:
 
 This is the primary offer message. Keep it short and concrete.
 
+### Discount
+
+Optionally offer a discount to encourage shoppers to accept. Choose **No discount**, **Percentage (%)**, **Fixed amount**, or **Fixed price**, then enter the value in the field next to the selector.
+
+### Targeting Rule
+
+Optionally restrict when this offer appears, for example only when the cart subtotal is greater than or equal to a value. This uses the same rule builder as the full offer editor, and you can refine the rules there after the draft is created.
+
 ### Preview first / Enable test mode
 
 When checked, UpsellBay enables global test mode so only admins and store managers can safely preview eligible offers before shoppers see them.
@@ -52,8 +62,7 @@ When checked, UpsellBay enables global test mode so only admins and store manage
 The wizard deliberately skips advanced fields such as:
 
 - status selection
-- detailed targeting rules
-- discount strategy
+- the full set of targeting options in the offer editor
 - schedule
 - priority
 - conflict override
