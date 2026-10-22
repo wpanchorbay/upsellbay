@@ -17,7 +17,13 @@ The Dashboard is the quickest place to answer three operational questions:
 2. Are there any active offers?
 3. Has UpsellBay generated views, accepts, and attributed revenue recently?
 
-If no active offers exist yet, the dashboard shows an onboarding panel with a direct link to create the first offer.
+If no active offers exist yet, the dashboard shows an onboarding panel with a **Create your first offer** button that opens the offer editor.
+
+## Where The Numbers Come From
+
+The free plugin's dashboard shows running totals of views, accepts, and dismissals, which it keeps as counters on each offer. These are the same counters shown in the Offers list.
+
+UpsellBay Pro adds the date-range performance section described below. It reads Pro's own daily stats table, which is a separate store from the per-offer counters. Pro passes its product page, cart, and thank-you events on to the free plugin so the counters include them, and records checkout bump events in its table. Each event goes to each store once. The two stores are not reconciled with each other, so their totals can still differ.
 
 ## Store Offer Status Cards
 

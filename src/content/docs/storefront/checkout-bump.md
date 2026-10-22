@@ -20,6 +20,9 @@ Because the customer has already decided to purchase and entered their payment i
 1. **Eligibility Check:** When the customer reaches the checkout page, UpsellBay instantly evaluates your active bump rules (e.g., minimum cart total, specific products in cart).
 2. **Seamless Rendering:** The offer is rendered natively within the WooCommerce checkout flow, inheriting your active theme's styling and typography so it looks like a built-in feature.
 3. **Frictionless Addition:** The customer simply checks the box. UpsellBay utilizes an AJAX request to instantly add the product, apply any associated discounts, and recalculate the order total without ever reloading the page.
+   - **One discounted unit:** The discount applies to one unit of the bump product. If the quantity is raised, the other units are charged at the product's regular price.
+   - **Ticked bump stays visible:** After the box is ticked, the bump stays on screen ticked so the customer can see it is applied and untick it.
+   - **Eligibility is rechecked on accept:** An offer that has expired, has not started yet, or whose trigger products are not in the cart cannot be accepted, even by a direct request. Pausing or deleting an offer, or turning offers off or test mode on, removes its discount from carts that already hold it.
 4. **Single Transaction:** The customer clicks "Place Order," seamlessly purchasing the original cart contents plus the bump item in a single, unified transaction.
 
 ## How to Create a Checkout Bump

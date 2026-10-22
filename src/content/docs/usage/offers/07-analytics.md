@@ -22,6 +22,12 @@ To help you measure ROI accurately, UpsellBay tracks the following metrics for e
 - **Orders**: The total number of unique orders that include this offer.
 - **Accept Rate**: The conversion percentage (Accepts divided by Views).
 
+## How The Counts Are Recorded
+
+- **Two stores:** The Offers list and the free dashboard show counters kept on each offer. UpsellBay Pro's date-range dashboard reads a separate daily stats table. They are not reconciled with each other, so the two can show different totals.
+- **Accepts and revenue:** An accept only adds to the Accepts count. Revenue, discount total, and orders are recorded once, when the order is recorded, so accepting an offer does not add revenue by itself.
+- **Checkout bump views in Pro:** A Classic Checkout bump is counted in Pro's table once per offer per server request, however many times the offer markup is built in that request.
+
 ## How To Interpret The Data
 
 Understanding the context behind the numbers helps refine your strategy:

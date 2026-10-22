@@ -9,7 +9,7 @@ description: Easily migrate, backup, and restore your UpsellBay offers and globa
   data-lightbox="true"
 />
 
-The **Tools** tab in UpsellBay provides a robust data migration system. Whether you are moving from a staging site to production, sharing templates between stores, or simply taking a backup, the Tools page handles it all.
+The **Tools** tab in UpsellBay provides a robust data migration system. Whether you are moving from a staging site to production, sharing templates between stores, or simply taking a backup, the Tools page handles it all. The Tools tab is provided by UpsellBay Pro.
 
 ## Export Data
 
@@ -36,9 +36,13 @@ On the Preview screen, you can configure exactly how the incoming data should be
 
 - **Import global settings**: Checked by default if settings exist in the file. Uncheck this if you only want to import offers without overwriting your store's current styling and configurations.
 - **Append "(Import)" to offer titles**: Check this if you want to easily distinguish the newly imported offers from your existing ones.
-- **Duplicates Handling**: If an imported offer has the exact same title as an offer already on your store, you can choose a strategy:
+- **Duplicates Handling**: If an imported offer has the exact same title as an offer already on your store, you can choose a strategy. The list shows **Skip importing offers that already exist** first, so that is what the field selects unless you change it:
+  - **Skip importing offers that already exist**: Ignores the incoming offer.
   - **Create duplicate offers**: Imports the offer alongside the existing one.
-  - **Skip importing**: Ignores the incoming offer.
-  - **Overwrite existing**: Updates the existing offer with the incoming configuration.
+  - **Overwrite existing offers with the same title**: Updates the existing offer with the incoming configuration.
+
+  If an import request is sent without this field (for example by a script), the server creates duplicates. The dropdown always sends a value, so this only affects direct requests.
+
+Import does not remap IDs. Product, category, and tag IDs in an offer, including those in its targeting rules, are imported exactly as exported, so they point at the right items only when the target store uses the same IDs. After importing onto a different store, open each offer, choose the products and targeting again, and only then enable it. Remapping by SKU is planned for a later release.
 
 Once you are satisfied with your preferences, click **Confirm Import** to apply the changes.

@@ -13,6 +13,10 @@ description: Maximize early touchpoints with companion product recommendations a
 
 A Product Page Offer is an upsell or cross-sell presented directly on the single product page, typically just below the "Add to Cart" form. It encourages the customer to bundle additional, related items with the main product before they even reach the cart.
 
+:::note
+Product page offers are provided by UpsellBay Pro. You choose the offered product yourself: UpsellBay Pro 1.0.0 does not generate "frequently bought together" recommendations from past orders.
+:::
+
 ## How it Works in UpsellBay
 
 1. **Contextual Evaluation:** When a customer views a product page, UpsellBay checks if there are any active offers specifically targeted at that product or category using Triggers or Rules.

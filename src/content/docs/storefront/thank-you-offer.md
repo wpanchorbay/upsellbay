@@ -19,7 +19,11 @@ Unlike pre-purchase offers, the customer has already crossed the finish line. Th
 
 1. **Post-Purchase Evaluation:** Once the primary order is successfully placed, UpsellBay instantly evaluates your active Thank-You offers against the contents of the newly completed order (e.g., checking if the customer just bought a coffee machine).
 2. **Safe Environment:** The offer is rendered exclusively on the final Thank-You page. Because the primary transaction is already securely processed and finalized, there is absolutely zero risk to your initial order revenue.
-3. **Follow-On Checkout:** If the customer accepts the offer, UpsellBay smoothly initiates a separate, expedited follow-on checkout process for this newly added item.
+3. **Follow-On Checkout:** If the customer accepts the offer, UpsellBay adds the item to a new cart and starts a separate checkout for it. The completed order is never changed or charged again.
+
+:::note
+UpsellBay Pro 1.0.0 does not charge a saved payment method in one click. A one-click post-purchase charge is planned for version 1.1 and is not available today.
+:::
 
 ## How to Create a Thank-You Offer
 
