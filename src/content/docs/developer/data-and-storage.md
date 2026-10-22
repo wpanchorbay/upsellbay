@@ -52,6 +52,20 @@ Core fields external integrations usually care about:
 
 - Aggregate daily analytics are stored in `{$wpdb->prefix}upsellbay_offer_stats_daily`.
 - The table is non-PII by design and is meant for reporting, not customer history reconstruction.
+- The table belongs to UpsellBay Pro. The free plugin does not create it.
+
+#### Two stat stores
+
+Offer interactions are kept in two places:
+
+| Store | Written by |
+| --- | --- |
+| Offer counters: post meta `_ub_counter_<type>` on the offer (`views`, `accepts`, `dismissals`), shown in the Offers list and the free dashboard | The free plugin, from its `upsellbay_offer_*` actions. Pro's `HostStatsBridge` re-fires Pro placement events (product page, cart, thank-you) on those actions. |
+| Pro daily table `{$wpdb->prefix}upsellbay_offer_stats_daily` | Pro's `AnalyticsRecorder`. Pro placements record directly; for `checkout_bump`, `HostStatsBridge` records the free plugin's events. |
+
+Each placement flows one way, so an event is not counted twice in the same store. The two stores are separate and are not reconciled with each other.
+
+In the Pro table, `AnalyticsRecorder::record_accept( $offer_id, $placement, $date )` increments accepts only. Orders, revenue, and discount total are added once, by `record_order()`, when the order is recorded.
 
 ### Logs
 
@@ -77,6 +91,8 @@ Key attribution meta includes:
 - `_ub_source_order_id`
 - `_ub_source_offer_id`
 - `_ub_follow_on_order`
+
+Since free 1.0.2 these item meta keys are hidden on the admin order screen through the `woocommerce_hidden_order_itemmeta` filter. They are still stored on the order item and readable through the WooCommerce CRUD API.
 
 ## Integration Rules
 

@@ -40,6 +40,18 @@ All documented hook names use the `upsellbay_` prefix.
 | `upsellbay_follow_on_order_created` | A thank-you follow-on order is linked to its source data. | `($order, int $source_order_id, int $source_offer_id): void` |
 | `upsellbay_daily_stats_reconciled` | A daily aggregate row is repaired or reconciled. | `(string $date, int $offer_id, string $placement): void` |
 
+## Pro Interaction Actions
+
+UpsellBay Pro fires its own `upsellbay_pro_` interaction actions. Its `HostStatsBridge` forwards them to the free plugin's `upsellbay_offer_*` actions, except for the `checkout_bump` placement, which only the free plugin fires.
+
+| Hook | Fires when | Arguments |
+| --- | --- | --- |
+| `upsellbay_pro_offer_viewed` | `PlacementRenderer` or `StoreApiExtender` has recorded a view. Forwarded to `upsellbay_offer_viewed` (not for `checkout_bump`). | `int $offer_id`, `string $placement` |
+| `upsellbay_pro_offer_accepted` | A Pro public route accepts an offer. Forwarded to `upsellbay_offer_accepted` (not for `checkout_bump`). | `int $offer_id`, `string $placement`, `array $result` |
+| `upsellbay_pro_offer_dismissed` | A shopper dismisses an offer. Forwarded to `upsellbay_offer_dismissed` (not for `checkout_bump`). | `int $offer_id`, `string $placement` |
+
+For `checkout_bump`, Pro listens to the free plugin's `upsellbay_offer_accepted`, `upsellbay_offer_dismissed`, and `upsellbay_offer_viewed` and records them in its own stats table. A Classic Checkout bump view has no such action, so Pro counts it from a callback on the `upsellbay_render_offer_html` filter, once per offer per request. That callback returns the HTML unchanged.
+
 ## Import and Export Filters
 
 | Hook | Purpose | Signature |
