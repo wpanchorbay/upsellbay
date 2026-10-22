@@ -5,13 +5,16 @@ description: Technical requirements and operational assumptions for running Upse
 
 ## Minimum Versions
 
-UpsellBay currently targets the following minimum platform versions:
+The two plugins declare different minimums.
 
-- PHP `8.1+`
-- WordPress `6.9+`
-- WooCommerce `10.8+`
+| | PHP | WordPress | WooCommerce |
+| --- | --- | --- | --- |
+| UpsellBay - Order Bump for WooCommerce (free) 1.0.2 | `8.0+` | `6.6+` | `9.0+` |
+| UpsellBay Pro 1.0.0 | `8.1+` | `6.8+` | `10.8+` |
 
-These version expectations come from the plugin's runtime baseline.
+If you run both plugins, the Pro minimums apply. UpsellBay Pro also needs the free plugin installed and active, at version 1.0.1 or newer. See [Installation](/upsellbay/getting-started/installation/).
+
+These values come from the plugin headers.
 
 ## WooCommerce Assumptions
 

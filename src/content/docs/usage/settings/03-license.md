@@ -13,6 +13,8 @@ description: Full documentation for license status, masked key handling, renewal
 
 Go to **WooCommerce -> UpsellBay -> Settings -> License** to manage the commercial connection between this site and your UpsellBay license.
 
+The License section is added by UpsellBay Pro. The free UpsellBay plugin has no license settings, so the section is not there until Pro is active.
+
 This section does not control how offers look or where they render. It exists so store owners and operators can safely confirm licensing state, renew access, and replace keys without exposing secrets in routine admin workflows.
 
 ## Status
@@ -138,11 +140,20 @@ Expected format:
 
 `WPAB-XXXXXXXXXXXX-XXXXXXXXXXXX`
 
+Below the field, the helper text reads: "Paste the key from your WPAnchorBay account and click Activate License. Offers keep working without a license; it is needed for updates and support."
+
 What it means:
 
 - leaving the field blank keeps the current key unchanged
-- entering a new key attempts activation during save
+- clicking **Activate License** attempts activation with the key you entered
 - invalid formatting is blocked before a malformed request is sent
+
+After you submit, an inline notice appears at the top of the License section:
+
+- a success notice, "License activated successfully.", when the key is accepted
+- an error notice, "License not activated:" followed by the reason, when the key is rejected or its format is invalid
+
+Check this notice and the **Status** badge to confirm whether activation worked.
 
 When to use it:
 

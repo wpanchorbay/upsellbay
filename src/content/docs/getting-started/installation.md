@@ -3,15 +3,20 @@ title: Installation
 description: Install and activate the private UpsellBay WooCommerce plugin safely on a WordPress site.
 ---
 
-UpsellBay is distributed as a private premium plugin from WPAnchorBay. Install it like a normal WordPress plugin ZIP, then activate it from the WordPress admin.
+UpsellBay is two plugins that work together:
+
+- **UpsellBay - Order Bump for WooCommerce** (the free plugin) provides the checkout bump, the offer editor, the setup wizard, and the Offers list and dashboard.
+- **UpsellBay Pro** (`upsellbay.zip`, distributed by WPAnchorBay) builds on the free plugin. It adds the product page, cart, and thank-you offers, the Tools tab, the License and Logs settings sections, and Pro analytics.
+
+UpsellBay Pro does not run on its own. Install and activate the free plugin first, then Pro. Install both like normal WordPress plugin ZIPs and activate them from the WordPress admin.
 
 ## Before You Install
 
-Confirm the store meets the [Requirements](/upsellbay/getting-started/requirements/), especially WooCommerce, PHP, checkout, and email delivery requirements.
+Confirm the store meets the [Requirements](/upsellbay/getting-started/requirements/), especially WooCommerce and PHP versions.
 
 ## Install from WordPress Admin
 
-Get the UpsellBay plugin ZIP (`upsellbay.zip`) file from WPAnchorBay site, or from your purchase email or the marketplace you purchased from. Then follow these steps:
+Install and activate WooCommerce and the free UpsellBay plugin first. Then get the UpsellBay Pro ZIP (`upsellbay.zip`) from the WPAnchorBay site, your purchase email, or the marketplace you purchased from, and follow these steps:
 
 <img src="/upsellbay/assets/screenshots/install/1-install-plugin-page.png" alt="Install Plugin Page - UpsellBay" data-lightbox="true" />
 
@@ -34,12 +39,12 @@ Get the UpsellBay plugin ZIP (`upsellbay.zip`) file from WPAnchorBay site, or fr
 7. Click **Activate Plugin**.
 
 :::note
-If WooCommerce is not active, UpsellBay shows an admin notice and does not initialize its recovery runtime.
+If the free UpsellBay plugin is missing, inactive, or older than version 1.0.1, UpsellBay Pro shows an admin notice and does not start.
 :::
 
 ## After Activation
 
-After plugin activation, UpsellBay creates its default options, registers recovery session statuses, seeds default recovery email content, and schedules recurring Action Scheduler jobs.
+When the free plugin is activated, UpsellBay saves its default settings and registers the private offer post type.
 
 You can go to the UpsellBay dashboard by clicking on the **Overview** link on the UpsellBay row of the plugins list.
 
@@ -61,8 +66,8 @@ There  are several ways to access UpsellBay:
 
 ## Updating UpsellBay
 
-UpsellBay uses a private updater connected to the WPAnchorBay license server. Activate a valid license key to receive continuous updates.
+UpsellBay Pro uses a private updater connected to the WPAnchorBay license server. Activate a valid license key under **Settings -> License** to receive updates. See [License Activation](/upsellbay/getting-started/license-activation/).
 
 :::note
-UpsellBay is not intended for WordPress.org hosting. The private updater and proprietary license metadata are intentional.
+The free UpsellBay plugin has no license settings. Offers keep working without a license; it is needed for updates and support.
 :::
