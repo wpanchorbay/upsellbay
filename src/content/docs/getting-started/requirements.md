@@ -9,7 +9,7 @@ The two plugins declare different minimums.
 
 | | PHP | WordPress | WooCommerce |
 | --- | --- | --- | --- |
-| UpsellBay - Order Bump for WooCommerce (free) 1.0.2 | `8.0+` | `6.6+` | `9.0+` |
+| UpsellBay - Order Bump for WooCommerce (free) 1.0.3 | `8.0+` | `6.6+` | `9.0+` |
 | UpsellBay Pro 1.0.0 | `8.1+` | `6.8+` | `10.8+` |
 
 If you run both plugins, the Pro minimums apply. UpsellBay Pro also needs the free plugin installed and active, at version 1.0.1 or newer. See [Installation](/upsellbay/getting-started/installation/).
